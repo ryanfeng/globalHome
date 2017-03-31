@@ -1,0 +1,113 @@
+.down-nav {
+  height: 56px;
+  width: 100%;
+  background: #ececed;
+  ul {
+    overflow: hidden;
+    li {      margin-top: 15px;
+      font-size: 18px;
+      color: #000;
+      margin-right: 20px;
+      .active {
+        color: #00afd8;
+      }
+    }
+  }
+}
+
+.banner {
+  height: 480px;
+  text-align: center;
+  width: 100%;
+  background-image: url("http://qnstatic.globalvillage.biz/server/service-base.png");
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  .title1 {
+    font-size: 50px;
+    color: #ffffff;
+    padding-top: 100px;
+  }
+  .title2 {
+    font-size: 40px;
+    color: #ffffff;
+  }
+}
+
+.main {
+  padding: 40px 0;
+  background: #fafafa;
+  width: 100%;
+  text-align: center;
+  .block {
+    margin: 10px 0;
+    display: inline-block;
+    background: #FFFFFF;
+    text-align: center;
+    border-radius: 6px;
+    width: 370px;
+    height: 520px;
+    padding: 20px 30px;
+    float: left;
+    img {
+      margin: 10px 0 15px;
+      width: 70px;
+    }
+    .title {
+      font-size: 20px;
+      color: #4a4a4a;
+      margin: 0 0 5px 0;
+    }
+    .con {
+      text-align: left;
+      font-size: 13px;
+      color: #9b9b9b;
+      letter-spacing: 1px;
+      line-height: 26px;
+    }
+  }
+  .middle {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  span {
+    color: #00afd8;
+  }
+}
+
+@media (max-width: 767px) {
+  .down-nav {
+    height: 50px;
+    ul {
+      li {
+        font-size: 16px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .banner {
+    height: 340px;
+    .title1 {
+      font-size: 30px;
+    }
+    .title2 {
+      font-size: 20px;
+    }
+  }
+
+  .main {
+    padding: 20px 0;
+    .block {
+      max-width: 400px;
+      min-height: 520px;;
+      width: 100%;
+      padding: 10px 15px;
+      float: none;
+      height: auto;
+      overflow: hidden;
+      display: block;
+      margin: 10px auto;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.down-nav {
+  height: 56px;
+  width: 100%;
+  background: #ececed;
+  ul {
+    overflow: hidden;
+    li {      margin-top: 15px;
+      font-size: 18px;
+      color: #000;
+      margin-right: 20px;
+      .active {
+        color: #00afd8;
+      }
+    }
+  }
+}
+
+body {
+  background: #fafafa;
+}
+
+.banner {
+  height: 400px;
+  text-align: center;
+  width: 100%;
+  background-image: url("http://qnstatic.globalvillage.biz/server/question-1.png");
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  .title1 {
+    font-size: 50px;
+    color: #ffffff;
+    padding-top: 100px;
+  }
+  .title2 {
+    font-size: 40px;
+    color: #ffffff;
+  }
+}
+
+.main {
+  margin: 20px auto 100px;
+  padding: 50px 150px;
+  background: #FFFFFF;
+  width: 1000px;
+  .topic {
+    font-size: 20px;
+    color: #3d464d;
+    margin-bottom: 30px;
+  }
+  .question {
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 26px;
+  }
+  .answer {
+    margin-bottom: 30px;
+    line-height: 26px;
+    font-size: 14px;
+    color: #9B9B9B;
+  }
+}
+
+@media (max-width: 767px) {
+  .down-nav {
+    height: 50px;
+    ul {
+      li {
+        font-size: 16px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .banner {
+    height: 340px;
+    .title1 {
+      font-size: 30px;
+    }
+    .title2 {
+      font-size: 20px;
+    }
+  }
+  .main {
+    margin: 0px auto 0px;
+    padding: 20px 20px;
+    width: 100%;
+    .topic {
+      margin-bottom: 15px;
+    }
+    .answer {
+      margin-bottom: 15px;
+    }
+  }
+}

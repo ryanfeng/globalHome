@@ -1,0 +1,17 @@
+doctype html
+html(lang='en')
+    head
+        title 地球村-app下载
+        include common/meta.jade
+    body
+        script.
+            var u = navigator.userAgent;
+            var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+            var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+            if (isAndroid) {
+                window.location.href="";
+            } else if (isiOS) {
+                window.location.href="https://itunes.apple.com/cn/app/de-qiu-cun-xin-feng/id1155752968?mt=8";
+            } else {
+                window.location.href="";
+            }

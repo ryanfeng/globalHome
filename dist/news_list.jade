@@ -1,0 +1,88 @@
+doctype html
+html(lang='en')
+    head
+        title 地球村“环保示范学校”—— 杭州市时代小学篇
+        include common/meta.jade
+        link(href='./css/news.css', rel='stylesheet')
+    body(style="background: #FFF;")
+        include common/head.jade
+        nav.bar
+            a(href="/") 地球村首页
+            span >
+            label 新闻资讯
+        main.main.pd0.main1
+            img.topBack(onclick="click_scroll('navbar')" src="./images/news/top.png")
+            article(style="margin-bottom: 14px;")
+                .news-panel(v-for="item in items" v-cloak)
+                    a(href="./news.html?id={{item.id}}")
+                        div.left-panel(:style="styleObject(item.picUrl)")
+                    div.right-panel
+                        a(href="./news.html?id={{item.id}}")
+                            p.p1 {{item.title}}
+                        p.p2 {{item.summary}}
+                        p.p3 {{item.pubTimeStr.split(' ')[0]}}
+                    .clear
+                    p.line
+            .button(@click="loadMore()") 浏览更多
+        include common/foot.jade
+        script.
+            $(".weather-mobile").hide();
+
+            var nowPage = 1, totalPage, vueObj;
+            getNews();
+            function getNews() {
+                $.ajax({
+                    url: 'http://cloud.globalvillage.biz/dqcCms/news/list',
+                    contentType: "application/json",
+                    type: 'post',
+                    data: JSON.stringify({
+                        isBanner: 0,
+                        siteKey: "website",
+                        status: 1,
+                        pageNum: nowPage,
+                        pageSize: 10
+                    }),
+                    dataType: 'json',
+                    success: function (listObj) {
+                        $(".button").html("浏览更多");
+                        if (listObj.code == 0) {
+                            totalPage = listObj.info.totalPages;
+                            if (nowPage == totalPage) {
+                                $(".button").hide();
+                            }
+
+                            nowPage++;
+
+                            //判断vue对象新建
+                            if (vueObj) {
+                                vueObj.items = vueObj.items.concat(listObj.data);
+                            } else {
+                                vueObj = new Vue({
+                                    el: '.main',
+                                    data: {
+                                        items: listObj.data,
+                                        styleObject: function (imgUrl) {
+                                            console.log(imgUrl)
+                                            return {'background-image': "url(" + imgUrl + ")"}
+                                        }
+                                    },
+                                    methods: {
+                                        loadMore: function () {
+                                            $(".button").html("加载中...");
+                                            setTimeout(function () {
+                                                getNews();
+                                            }, 600)
+                                        }
+                                    }
+                                })
+                            }
+                        } else {
+                            alert("不好意思，服务器不听话了！");
+                        }
+                    },
+                    error: function () {
+                        alert("不好意思，服务器不听话了！");
+                    }
+                })
+            }
+

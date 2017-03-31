@@ -1,0 +1,116 @@
+doctype html
+html(lang='en')
+    head
+        title 地球村-资料下载
+        include common/meta.jade
+        link(href='../css/downFile.css', rel='stylesheet')
+    body
+        include common/head.jade
+        .down-nav
+            .container
+                ul
+                    li
+                        a.navi-tiem.active#pro1(href="#") 产品手册
+                    //li
+                    //    a.navi-tiem#pro2(href="#") 使用手册
+                    //li
+                    //    a.navi-tiem#pro3(href="#") APP连接教程
+                    li
+                        a.navi-tiem#pro4(href="#") 检测报告
+        .banner
+            p.banner-title-en DATA  DOWNLOAD
+            .diver
+            p.banner-title-ch 资料下载
+        .main#produce
+            .container
+                p.main-title-ch 产品手册
+                p.main-title-en PRODUCT  MANUAL
+                ul
+                    li
+                        img(src="../images/down/pro-jf.png")
+                        .main-black
+                            a(href="../file/pro-jf.pdf" target="_blank")
+                                p.block-name 下载－飓风空气复原机.pdf
+                        p.time 更新于：2016-10-12日
+                    li
+                        img(src="../images/down/pro-s1.png" )
+                        .main-black
+                            a(href="../file/pro-s1.pdf" target="_blank")
+                                p.block-name 下载－S1空气复原机.pdf
+                        p.time 更新于：2016-10-12日
+        //.main#user
+        //    .container
+        //        p.main-title-ch 使用手册
+        //        p.main-title-en USE MANUAL
+        //        ul
+        //            li
+        //                img(src="../images/down/use-jf.png")
+        //                .main-black
+        //                    p.block-name 下载－飓风使用手册.pdf
+        //                p.time 更新于：2016-10-12日
+        //            li
+        //                img(src="../images/down/use-s1.png")
+        //                .main-black
+        //                    p.block-name 下载－S1使用手册.pdf
+        //                p.time 更新于：2016-10-12日
+        //.main#app
+        //    .container
+        //        p.main-title-ch APP连接教程
+        //        p.main-title-en APP CONNECTION TUTORIAL
+        //        ul
+        //            li
+        //                img(src="../images/down/study-jf.png")
+        //                .main-black
+        //                    p.block-name 下载－飓风连接教程.pdf
+        //                p.time 更新于：2016-10-12日
+        .main#report
+            .container
+                p.main-title-ch 检测报告
+                p.main-title-en EXAMINING  REPORT
+                ul
+                    li
+                        img(src="../images/down/report-jf.png")
+                        .main-black
+                            a(href="../file/report-jf.pdf" target="_blank")
+                                p.block-name 下载－飓风检测报告.pdf
+                        p.time 更新于：2016-10-12日
+                    li
+                        img(src="../images/down/report-s1.png")
+                        .main-black
+                            a(href="../file/report-s1.pdf" target="_blank")
+                                p.block-name 下载－S1检测报告.pdf
+                        p.time 更新于：2016-10-12日
+        include common/foot.jade
+        script.
+            $("#pro1").click(function () {
+                click_scroll('produce');
+            })
+            $("#pro2").click(function () {
+                click_scroll('user');
+            })
+            $("#pro3").click(function () {
+                click_scroll('app');
+            })
+            $("#pro4").click(function () {
+                click_scroll('report');
+            })
+
+            //底部跳转到此页面的滚到指定位置
+            if (getUrlParam('produce')) {
+                click_scroll('produce');
+            } else if (getUrlParam('user')) {
+                click_scroll('user');
+            } else if (getUrlParam('app')) {
+                click_scroll('app');
+            } else if (getUrlParam('report')) {
+                click_scroll('report');
+            }
+
+            $(".navi-tiem").click(function () {
+                $(".navi-tiem").removeClass('active');
+                $(this).addClass('active');
+            });
+
+
+
+

@@ -1,0 +1,47 @@
+doctype html
+html(lang='en')
+    head
+        title 地球村-服务支持-App下载
+        include common/meta.jade
+        link(href='../css/appDown.css', rel='stylesheet')
+    body
+        include common/head.jade
+        .down-nav
+            .container
+                ul
+                    li
+                        a(href="afterService.html") 售后服务
+                    li
+                        a(href="appDown.html").active APP下载
+                    li
+                        a(href="question.html") 常见问题
+        .main-top
+            .container
+                .block-left
+                    p.title1
+                        |全新版本，全新智能体验
+                    p.title2
+                        |支持智能硬件：<span>新风净化设备、空气复原机</span>
+                    .down-block
+                        img(src='../images/server/app-logo.png').logo
+                        img.dwon-2wm(src="../images/server/app-2wm.png")
+                .block-right
+                    img(src="../images/server/app-down.png")
+        .main-foot
+            .container
+               .foot-b
+                   p.title1 室外空气
+                   label.divider
+                   p.title2 室外空气质量实时知晓
+                   img(src="../images/server/app-1.png")
+                .foot-b.foot-middle
+                    p.title1 室内空气
+                    label.divider
+                    p.title2 关联设备室内空气质量实时知晓
+                    img(src="../images/server/app-2.png")
+                .foot-b
+                    p.title1 空气地图
+                    label.divider
+                    p.title2 全国城市空气质量一键知晓
+                    img(src="../images/server/app-3.png")
+        include common/foot.jade

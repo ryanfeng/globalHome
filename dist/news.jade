@@ -1,0 +1,52 @@
+doctype html
+html(lang='en')
+    head
+        title {{item.title}}
+        include common/meta.jade
+        link(href='../css/news.css', rel='stylesheet')
+    body
+        include common/head.jade
+        nav.bar
+            a(href="/") 地球村首页
+            span >
+            a(href="news_list.html") 新闻资讯
+            span >
+            label 正文
+        main.main(v-cloak)
+            img.topBack(onclick="click_scroll('navbar')" src="../images/news/top.png")
+            h1.topic#topic {{item.title}}
+            p.time {{item.pubTimeStr}}发布
+            p.con(v-html="item.fullContent")
+        .none
+            include common/foot.jade
+    script.
+        $(".weather-mobile").hide();
+
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]);
+            return null;
+        }
+        //获取资讯列表
+        $.ajax({
+            url: 'http://cloud.globalvillage.biz/dqcCms/news/get',
+            type: 'post',
+            data: {
+                newsId: parseInt(getUrlParam('id'))
+            },
+            dataType: 'json',
+            success: function (newObj) {
+                new Vue({
+                    el: 'html',
+                    data: {
+                        item: newObj.data
+                    }
+                })
+            },
+            error: function () {
+                alert("不好意思，服务器不听话了！");
+            }
+        })
+
+
