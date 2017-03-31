@@ -9,6 +9,6 @@ Online URL : ([www.globalvillage.biz][1])
 
 
 ## License
-Copyright(c) 2014-2017 地球村环保科技有限公司
+Copyright(c) 2014-2017 浙江地球村环保科技有限公司
 
 
