@@ -4,7 +4,7 @@ Based on vue 1.0.0
 
 Online URL : ([www.globalvillage.biz][1])
 
-[1]: www.globalvillage.biz
+[1]: http://www.globalvillage.biz/
 
 
 
