@@ -5,9 +5,9 @@ footer.footer
         .col-md-4.col-sm-12.col-xs-12.f-p-tp.f-col-center
             .col-xs-4(v-for='l in list')
                 .ft-col-block
-                    a(href="{{l.src}}")
+                    a(href="{{l.src}}" rel="external nofollow")
                         h4(v-cloak) {{l.name}}
-                    a(href="{{c.url}}" v-for='c in l.child')
+                    a(href="{{c.url}}" v-for='c in l.child' rel="external nofollow")
                         h5(v-cloak) {{c.name}}
         .col-md-4.col-sm-12.col-xs-12.f-p-tp.ft-last
             a(href="https://globalvillage.jd.com/" target='_blank' rel="external nofollow")
