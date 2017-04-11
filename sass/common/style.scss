@@ -710,12 +710,14 @@ a {
   }
   .f-tp {
     background: #EBEBED;
+    text-align: center;
     .f-p-tp {
       padding-top: 58px;
       height: 312px;
       box-sizing: border-box;
       text-align: center;
       overflow: hidden;
+      display: inline-block;
       .about-logo {
         width: 32px;
         margin-right: 15px;
@@ -737,6 +739,7 @@ a {
       text-align: center;
       border-left: 1px solid #d4d4d4;
       border-right: 1px solid #d4d4d4;
+      width: 500px;
       a {
         color: #4a4a4a;
         &:hover {
@@ -787,6 +790,11 @@ a {
     display: inline-block;
     text-align: left;
   }
+  .about-link {
+    text-align: left;
+    position: absolute;
+    bottom: 0px;
+  }
   .f-bt {
     .ft-font {
       background: #333333;
@@ -801,10 +809,11 @@ a {
     }
   }
 
-  @media (max-width: 992px) {
+  @media (max-width: 767px) {
     .f-tp {
       padding-top: 28px;
       .f-p-tp {
+        display: block;
         padding-top: 0;
       }
       .ft-first {
@@ -821,6 +830,7 @@ a {
         text-align: center;
         border: 0;
         height: 160px;
+        width: 100%;
         padding: 0px;
         h4 {
           font-size: 17px;
@@ -866,6 +876,33 @@ a {
     .col-xs-4 {
       padding-right: 0;
       padding-left: 0;
+    }
+  }
+  @media (max-width: 430px) {
+    .f-tp {
+      .f-col-center {
+        h4 {
+          font-size: 16px;
+        }
+        h5 {
+          font-size: 13px;
+        }
+        .col-xs-3 {
+          padding: 0;
+        }
+      }
+    }
+  }
+  @media (max-width: 374px) {
+    .f-tp {
+      .f-col-center {
+        h4 {
+          font-size: 14px;
+        }
+        h5 {
+          font-size: 12px;
+        }
+      }
     }
   }
 }

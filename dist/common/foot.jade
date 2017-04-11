@@ -1,15 +1,43 @@
 footer.footer
-    .row.f-tp
-        .col-md-4.col-sm-12.col-xs-12.f-p-tp.ft-first
+    .f-tp
+        .f-p-tp.ft-first
             img.data-img(data-url="./images/ft_heath.png")
-        .col-md-4.col-sm-12.col-xs-12.f-p-tp.f-col-center
-            .col-xs-4(v-for='l in list')
+        .f-p-tp.f-col-center
+            .col-xs-3
                 .ft-col-block
-                    a(href="{{l.src}}" rel="external nofollow")
-                        h4(v-cloak) {{l.name}}
-                    a(href="{{c.url}}" v-for='c in l.child' rel="external nofollow")
-                        h5(v-cloak) {{c.name}}
-        .col-md-4.col-sm-12.col-xs-12.f-p-tp.ft-last
+                    a(rel="external nofollow", href="afterService.html")
+                        h4 服务支持
+                    a(rel="external nofollow", href="afterService.html")
+                        h5 售后服务
+                    a(rel="external nofollow", href="appDown.html")
+                        h5 App下载
+                    a(rel="external nofollow", href="question.html")
+                        h5 常见问题
+            .col-xs-3
+                .ft-col-block
+                    a(rel="external nofollow", href="downFile.html")
+                        h4 资料下载
+                    a(rel="external nofollow", href="downFile.html?produce=1")
+                        h5 产品手册
+                    a(rel="external nofollow", href="downFile.html?report=1")
+                        h5 检测报告
+            .col-xs-3
+                .ft-col-block
+                    a(rel="external nofollow", href="join.html")
+                        h4 联系我们
+                    a(rel="external nofollow", href="join.html")
+                        h5 商务合作
+            .col-xs-3
+                .ft-col-block
+                    a
+                        h4 相关栏目
+                    a(href="/schoolDevice.html")
+                        h5 校园新风
+                    a(href="/business.html")
+                        h5 健康屋
+                    a(href="/produceXF.html")
+                        h5 家用新风机
+        .f-p-tp.ft-last
             a(href="https://globalvillage.jd.com/" target='_blank' rel="external nofollow")
                 img.about-logo.data-img(data-url="./images/ft-jd.png")
             a(href="https://shop156098665.taobao.com/shop/view_shop.htm?spm=a1z0k.6846577.1130980037.d4919818.esBR4q&shop_id=156098665" target='_blank' rel="external nofollow")
@@ -32,8 +60,8 @@ footer.footer
                 a(href="http://www.shttsz.com/" target="_blank") 岗亭
                 |&nbsp;&nbsp;
                 a(href="http://www.cn-ndt.com/" target="_blank") 探伤机
-                | &nbsp;&nbsp;
-                a(href="http://www.cqqzsp.com/" target="_blank") 重庆火锅底料
+                //| &nbsp;&nbsp;
+                //a(href="http://www.cqqzsp.com/" target="_blank") 重庆火锅底料
     div#wx-bg
     div#wx
         img.data-img(src="./images/wx-block.png")

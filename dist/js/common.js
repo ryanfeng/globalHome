@@ -263,14 +263,21 @@ $('html').css("font-size", $(window).width()*20/375);
             name: "资料下载",
             child: [
                 {name: '产品手册', url: 'downFile.html?produce=1'},
-                // {name: '使用手册', url: 'downFile.html?user=1'},
-                // {name: 'App连接教程', url: 'downFile.html?app=1'},
                 {name: '检测报告', url: 'downFile.html?report=1'}],
             src: 'downFile.html'
         },
         contact: {
             name: "联系我们",
             child: [{name: '商务合作', url: 'business.html?cantrat=1'}],
+            src: 'business.html?cantrat=1'
+        },
+        aboutLink: {
+            name: "相关栏目",
+            child: [
+                {name: '校园新风', url: '/schoolDevice.html'},
+                {name: '健康屋', url: '/business.html'},
+                {name: '家用新风机', url: '/produceXF.html'}
+            ],
             src: 'business.html?cantrat=1'
         }
     };
