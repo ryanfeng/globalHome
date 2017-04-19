@@ -113,7 +113,7 @@ $('html').css("font-size", $(window).width()*20/375);
     $('.s1-con').scrollLoading();
     $('.school-con').scrollLoading();
     $('.bus-con').scrollLoading();
-    $('.home-img').scrollLoading();
+    $('.global-con').scrollLoading();
     //图片
     $('.data-img').scrollLoading();
 

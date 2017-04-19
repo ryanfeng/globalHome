@@ -4,245 +4,89 @@ html(lang='en')
         title 浙江地球村环保科技有限公司官网
         meta(name="keywords" content="健康屋,地球村加盟,健康屋加盟,空气净化加盟,校园新风,家用新风机,地球村")
         meta(name="description" content="地球村是一家专注于呼吸健康领域的物联网企业，坚持“产品即服务”的理念：企业提供服务，用户按服务消费。地球村以物联网连接用户和环境，通过智能硬件和大数据服务，为用户提供洁净新鲜的呼吸体验和个人健康管理。")
-        include common/meta.jade 
+        include common/meta.jade
         link(href='./css/home.css', rel='stylesheet')
-        link(href='./css/common/video-js.min.css', rel='stylesheet')
     body
         include common/head.jade
         main
-            article
-                section#carousel-example-generic.hidden-xs.carousel.slide(data-ride='carousel')
-                    ol.carousel-indicators
-                        li.active(data-target='#carousel-example-generic', data-slide-to='0')
-                        li(data-target='#carousel-example-generic', data-slide-to='1')
-                        li(data-target='#carousel-example-generic', data-slide-to='2')
-                    .carousel-inner.carousel1(role='listbox')
-                        .item.active
-                            a(href="./schoolDevice.html" target="_blank")
-                                img.big-name.first-img(src='http://qnstatic.globalvillage.biz/hm-big1.png', alt='背景图')
-                                .hm-time-anima
-                                    .hm-time-block
-                                        .home-img.hm-big1-bg.img-responsive(data-url="./images/hm-big1-bg.png")
-                                        .home-img.hm-big1-reverse.img-responsive(data-url="./images/hm-big1-reverse1.png")
-                        .item
-                            a(href="./produceXF.html" target="_blank")
-                                img.big-name(src='http://qnstatic.globalvillage.biz/hm-big2.png', alt='背景图')
-                        .item
-                            a(href="./business.html" target="_blank")
-                                img.big-name(src='http://qnstatic.globalvillage.biz/hm-banner-3.png', alt='背景图')
-                section#carousel-example-generic-mobile.carousel.slide.visible-xs-inline-block(data-ride='carousel')
-                    .carousel-inner.carousel1(role='listbox')
-                        .item.active
-                            a(href="./schoolDevice.html" target="_blank")
-                                img.big-name.first-img(src='../images/hm-mobile-big1.png', alt='背景图')
-                                .hm-time-anima
-                                    .hm-time-block
-                                        .home-img.hm-big1-bg.img-responsive(data-url="./images/hm-big1-bg.png")
-                                        .home-img.hm-big1-reverse.img-responsive(data-url="./images/hm-big1-reverse1.png")
-                        .item
-                            a(href="./produceXF.html" target="_blank")
-                                img.big-name(src='http://qnstatic.globalvillage.biz/hm-mobile-big2.png', alt='背景图')
-                        .item
-                            a(href="./business.html" target="_blank")
-                                img.big-name(src='http://qnstatic.globalvillage.biz/bus-small-1-v1.png', alt='背景图')
-                    a.left.carousel-control(href='#carousel-example-generic-mobile', role='button', data-slide='prev').visible-xs-inline-block
-                        span.glyphicon.glyphicon-chevron-left
-                        span.sr-only Previous
-                    a.right.carousel-control(href='#carousel-example-generic-mobile', role='button', data-slide='next').visible-xs-inline-block
-                        span.glyphicon.glyphicon-chevron-right
-                        span.sr-only Next
-            article.container.news
-                div.new-title
-                    | 新闻资讯<br>
-                    label
-                    br
-                    span NEWS   CENTER
-                div.row
-                    section.col-sm-4
-                        .new-block.new-block1
-                            a(href='news.html?id=39' target='_blank')
-                                .img-responsive.img-bg(style="background-image: url('http://oisl737do.bkt.clouddn.com/bc80897fba804458bf4e978814cec59c.png?e=1549794175&token=zTof-q0UNUTxS0aBdY6DHOIbtSCS_J5lx4Qf1vzW:odM3iHLqT3182l4DHzefrdpcHGI=');")
-                                h2 捐赠1000万的新风设备用于改善杭州地区学校的教室空气质量
-                                p.new-con 2016年9月25日，《2016中国新西兰可持续发展教育论坛》（以下简称论坛）在中国杭州低碳科技馆举行并取得圆满成功。地球村捐赠价值1000万的新风设备用于改善杭州地区学校的教室空气质量。
-                                p.new-block
-                                    label.new-time-img.data-img
-                                    span 2017-02-17
-                    section.col-sm-4
-                        .new-block.new-block1
-                            a(href='news.html?id=40' target='_blank')
-                                .img-responsive.img-bg(style="background-image: url('http://oisl737do.bkt.clouddn.com/8d07f9b5bf654d3f93d4a4c89eb5a432.jpg?e=1549794750&token=zTof-q0UNUTxS0aBdY6DHOIbtSCS_J5lx4Qf1vzW:Wt9Mehtl1-gC4qFmL1WgxgREQqQ=');")
-                                h2 地球村“环保示范学校”—— 杭州市时代小学篇
-                                p.new-con 2016年9月10日，暨第32个教师节之际，地球村用实际行动给学校送了一份大礼。上午9时，浙江地球村环保科技有限公司与杭州市时代小学，在杭州时代小学举办“环保示范学校”落地仪式。
-                                p.new-block
-                                    label.new-time-img.data-img
-                                    span 2017-02-17
-                    section.col-sm-4
-                        .new-block.new-block1
-                            a(href='news.html?id=41' target='_blank')
-                                .img-responsive.img-bg(style="background-image: url('http://oisl737do.bkt.clouddn.com/b51cff1203b242a4b6833093ee7aeefc.jpg?e=1549795113&token=zTof-q0UNUTxS0aBdY6DHOIbtSCS_J5lx4Qf1vzW:hKQn3GNqbeXNtKKvPOOrkalIWxM=');")
-                                h2 地球村荣获杭州市高新技术企业称号
-                                p.new-con 根据《杭州市高新技术企业认定工作的实施意见》（杭政办函〔2007〕352号）等文件精神，经审定，浙江地球村环保科技有限公司荣获2016年杭州市第一批高新技术企业称号。
-                                p.new-block
-                                    label.new-time-img.data-img
-                                    span 2017-02-17
-                div(style="text-align: center;")
-                    a(href="./news_list.html" alt="更多新闻资讯" style="color: #34bfe0; display:inline-block;margin-top:40px" )
-                        .button 浏览更多
-            article.all
-                .container.video
-                    .new-title
-                        | 视频中心<br>
-                        label
-                        br
-                        span VEDIO   CENTER
-                    .row
-                        .col-sm-12.video
-                            video(id="video" class="video-js vjs-default-skin vjs-big-play-centered" controls
-                            preload="none" loop poster="./images/home/video-1.jpg")
-                                source(src="http://qnstatic.globalvillage.biz/video/qy.mp4" type="video/mp4")
-                    .row.sm-blocK
-                        section.col-sm-4
-                            .new-block(onclick="disShowBlock('video1')")
-                                img.poster-img.data-img(data-url="./images/home/hs.png")
-                                .poster-bt
-                                p(onclick="disShowBlock('video1')") 地球村COO接受新锐杭商采访
-                        section.col-sm-4
-                            .new-block(onclick="disShowBlock('video2')")
-                                img.poster-img.data-img(data-url="./images/home/tl.png")
-                                .poster-bt
-                                p(onclick="disShowBlock('video2')") 地球村CEO受邀钱塘论坛
-                        section.col-sm-4
-                            .new-block(onclick="disShowBlock('video3')")
-                                img.poster-img.data-img(data-url="./images/home/ys.png")
-                                .poster-bt
-                                p(onclick="disShowBlock('video3')") 地球村COO接受杭州影视新闻采访
-        mark.mask
-            .closeBack
-            video(id="video1" class="video1 videoNal video-js vjs-default-skin vjs-big-play-centered" controls preload="none")
-                source(src="http://qnstatic.globalvillage.biz/video/hs.mp4" type="video/mp4")
-            video(id="video2" class="video2 videoNal video-js vjs-default-skin vjs-big-play-centered" controls preload="none")
-                source(src="http://qnstatic.globalvillage.biz/video/tl.mp4" type="video/mp4")
-            video(id="video3" class="video3 videoNal video-js vjs-default-skin vjs-big-play-centered" controls preload="none" data-setup="{}" )
-                source(src="http://qnstatic.globalvillage.biz/video/ys.mp4" type="video/mp4")
+            article.global-con.global-con1(data-url="./images/home/global-v1.jpg")
+                .container
+                    section.con-ft-block
+                        h2 人类68%的疾病
+                        h3 是由空气污染引起的。
+                        p ——美国环保局、加拿大卫生署
+            article.global-con.global-con2
+                section.con-ft-block.con-ft-block-first
+                    h2 MISSION  地球村的使命
+                    h3 地球如村，呼吸无限
+                    p 让空气回到最原始的纯粹状态，让人们拥有健康的呼吸，让世界健康起来。
+                section.con-ft-block.con-ft-block-plane.con-ft-block-active
+                    h3 认识空气
+                    p 拒绝温水煮青蛙，空气污染是温水，人类是青蛙。
+                    p 地球村要告诉您什么样的空气是好的、健康的、优质的，什么样是不好的、恶性的甚至有毒的。
+                section.con-ft-block.con-ft-block-plane
+                    h3 复原空气
+                    p 新风净化行业16年经验，《中小学教室空气质量规范》行业标准制定者。
+                    p 自主研发全系列空净产品：新风净化设备、空气复原机，满足各类需求。
+                section.con-ft-block.con-ft-block-plane
+                    h3 MISSION  地球村的使命
+                    p 产品买卖时代已经终结，用户要的是好空气，不是净化器。
+                    p 收取服务费代替一锤子买卖，持续服务用户，用户体验价值最大化，服务价值最大化。
+            article.global-con.global-con3(data-url="./images/home/global-v3.jpg")
+                .container
+                    section.con-ft-block.ft-color-FFF
+                        h2 FUTURE  地球村的未来
+                        h3 地球如村，连接无限
+                        p 物联网、大数据、云平台，连接你、我、他
+            article.global-con.global-con4(data-url="./images/home/global-v4.jpg")
+                .container
+                    section.con-ft-block
+                        h2 连接用户
+                        p
+                            | 通过物联网大数据连接用户，为用户提供健康呼吸服务，包含优质的空气质量、
+                            br
+                            | 可视化的数据呈现、一键上门服务体系等。
+                            br
+                            | 未来，地球村健康云平台将成为个人健康管理平台，
+                            br
+                            | 为用户提供定制化的健康管理服务。
+            article.global-con.global-con5(data-url="./images/home/global-v5.jpg")
+                .container
+                    section.con-ft-block
+                        h2 连接生产
+                        p
+                            | 地球村的所有产品通过物联网，
+                            br
+                            | 实现智能化的工厂管理体系，
+                            br
+                            | 产品在线测试验证调试生产。
+            article.global-con.global-con6
+                .container
+                    section.con-ft-block.ft-color-FFF
+                        h2 连接服务网点
+                        p
+                            | 地球村引入征信体系，加上货币化运营，形成良性的互联网营销体系，
+                            br
+                            | 打通传统服务商、门店营销难的痛点。
+                        img.data-img(data-url="./images/home/global-v6-1.png")
+            article.global-con.global-con7(data-url="./images/home/global-v7.jpg")
+                .container
+                    section.con-ft-block.ft-color-FFF
+                        h2 IDEA  地球村的理念
+                        h3 低碳、环保、绿色、健康
+                        p
+                            | 地球村的办公区空气永远洁净新鲜，为村民提供良好的工作环境；<br>
+                            | 地球村的展会简单但不失特色，向行业和客户展现低碳环保的理念；<br>
+                            | 地球村通过钉钉实现移动智能化办公，提高效率的同时减少资源浪费；<br>
+                            | 地球村为经销商提供一整套互联网营销和管理系统，通过互联网的方式节能减排；<br>
+                            | 每年的4月22日是世界地球日，也是地球村的周年纪念日。<br>
+            article.global-con.global-con8(data-url="./images/home/global-v8.jpg")
+                .container
+                    section.con-ft-block
+                        img.data-img(data-url="./images/home/global-v8-1.png")
         include common/foot.jade
         script.
-            //首页大图动画图片大小
-            $(document).ready(function () {
-                if ($(window).width() < 768) {
-                    changeItem(0.549);
-                } else {
-                    changeItem(0.3695324283);
-                }
-
-                function changeItem(number) {
-                    $(".hm-time-block").width($(document).width() * number);
-                    $(".hm-time-block").height($(".hm-time-block").width());
-                    $(window).resize(function () {
-                        $(".hm-time-block").width($(document).width() * number);
-                        $(".hm-time-block").height($(".hm-time-block").width());
-                    });
-                }
-            });
-
-            //视屏播放处理
-            (function () {
-                var video, video1, video2, video3;
-                loadVideo();
-                //延迟加载处理
-                $(window).scroll(function () {
-                    if (!video) {
-                        loadVideo();
-                    }
-                });
-
-                //加载视屏js库
-                function loadVideo() {
-                    if ($(document).scrollTop() > 588) {
-                        var element = document.createElement("script");
-                        element.src = 'http://qnstatic.globalvillage.biz/js/video.min.js';
-                        document.body.appendChild(element);
-                        element.onload = element.onreadystatechange = function () {
-                            if (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete') {
-                                initVideo();
-                            }
-                            element.onload = element.onreadystatechange = null;
-                        }
-                    }
-                }
-
-                //视频模块初始化
-                function initVideo() {
-                    video = videojs("video");
-                    video1 = videojs("video1");
-                    video2 = videojs("video2");
-                    video3 = videojs("video3");
-                    //关闭视屏
-                    $(".closeBack").on('click', function () {
-                        video1.pause();
-                        video2.pause();
-                        video3.pause();
-                        $("#video1").hide();
-                        $("#video2").hide();
-                        $("#video3").hide();
-                        $(".mask").hide();
-                    })
-                }
-
-                //播放弹出框视屏但是暂停主视屏
-                function disShowBlock(idName) {
-                    $("#" + idName).show();
-                    videojs(idName).play();
-                    $(".mask").show();
-                    video.pause();
-                }
-
-                window.disShowBlock = disShowBlock;
-            }());
-
-            //移动发端滑动效果
-            if ($(window).width() < 768) {
-                var element = document.createElement("script");
-                element.src = './js/plugin/touch-0.2.14.min.js';
-                document.body.appendChild(element);
-                element.onload = element.onreadystatechange = function () {
-                    if (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete') {
-                        touch.on('#carousel-example-generic-mobile .item', 'swipeleft', function (ev) {
-                            $('#carousel-example-generic-mobile').carousel('next');
-                        });
-                        touch.on('#carousel-example-generic-mobile .item', 'swiperight', function (ev) {
-                            $('#carousel-example-generic-mobile').carousel('prev');
-                        });
-                    }
-                    element.onload = element.onreadystatechange = null;
-                }
-            }
-
-            //获取资讯列表
-            $.ajax({
-                url: 'http://cloud.globalvillage.biz/dqcCms/news/list',
-                contentType: "application/json",
-                type: 'post',
-                data: JSON.stringify({
-                    isBanner: 0,
-                    siteKey: "website",
-                    status: 1,
-                    pageNum: 1,
-                    pageSize: 10
-                }),
-                dataType: 'json',
-                success: function (listObj) {
-                    new Vue({
-                        el: '.news',
-                        data: {
-                            items: listObj.data,
-                            styleObject: function (imgUrl) {
-                                console.log(imgUrl)
-                                return {'background-image': "url(" + imgUrl + ")"}
-                            }
-                        }
-                    })
-                },
-                error: function () {
-                    alert("不好意思，服务器不听话了！");
-                }
+            $(".con-ft-block-plane").hover(function () {
+                $(".con-ft-block-plane").removeClass("con-ft-block-active")
+                $(this).addClass("con-ft-block-active");
             })
