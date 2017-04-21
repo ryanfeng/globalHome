@@ -33,7 +33,7 @@
 .global-con1 {
   height: 800px;
   .con-ft-block {
-    padding-top: 260px;
+    padding-top: 240px;
     width: 700px;
     text-align: left;
     h2 {
@@ -79,6 +79,7 @@
       font-size: 20px;
       color: #6e6e6e;
       margin-bottom: 5px;
+      line-height: 32px;
     }
   }
   .con-ft-block-first {
@@ -246,8 +247,9 @@
         margin-bottom: 18px;
       }
       p {
-        font-size: 12px;
+        font-size: 14px;
         margin-bottom: 5px;
+        line-height: 22px;
       }
     }
     .con-ft-block-first {
@@ -273,7 +275,7 @@
   }
 
   .global-con4 {
-    height: 450px;
+    height: 520px;
     .con-ft-block {
       padding-top: 20px;
       h2 {
@@ -281,7 +283,7 @@
         margin-bottom: 12px;
       }
       p {
-        font-size:13px;
+        font-size:14px;
         line-height:26px;
       }
     }
@@ -291,13 +293,14 @@
     height: 200px;
     .con-ft-block {
       padding-top: 30px;
-      margin-left: -20px;
+      margin-left: -40px;
+      width: auto;
       h2 {
         font-size:20px;
         margin-bottom: 20px;
       }
       p {
-        font-size:13px;
+        font-size:14px;
         line-height:20px;
       }
     }
@@ -317,27 +320,32 @@
       }
       img {
         height: 100px;
-        margin-top: 30px;
+        margin-top: 20px;
       }
     }
   }
 
 
   .global-con7 {
-    height: 380px;
+    height: 480px;
     .con-ft-block {
       padding-top: 20px;
       h2 {
-        font-size:20px;
-        margin-bottom: 20px;
+        font-size:24px;
+        margin-bottom: 26px;
       }
       h3 {
         font-size:18px;
-        margin-bottom: 14px;
+        margin-bottom: 18px;
       }
       p {
         font-size:14px;
         line-height:24px;
+        label {
+          width: 100%;
+          display: inline-block;
+          height: 60px;
+        }
       }
     }
   }

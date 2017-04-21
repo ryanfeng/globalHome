@@ -643,12 +643,6 @@ a {
 
 //尾部样式
 .footer {
-  .row {
-    margin: 0;
-  }
-  .container {
-    padding: 0;
-  }
   .f-tp {
     height: 610px;
     width: 100%;
@@ -727,99 +721,78 @@ a {
 
   @media (max-width: 767px) {
     .f-tp {
-      padding-top: 28px;
-      .f-p-tp {
-        display: block;
-        padding-top: 0;
+      height: 103vw;
+      width: 100%;
+      text-align: center;
+      background-size: cover;
+      background-image: url("../../images/common/ft-bg.jpg");
+      background-position: 50%;
+      color: #FFFFFF;
+      .tp-wrapper {
+        ul {
+          padding: 10vw 0 0 0;
+          li {
+            padding: 0 3vw;
+            margin-bottom: 5vw;
+            img {
+              height: 6vw;
+            }
+            p {
+              font-size: 2.6vw;
+              margin-top: 2vw;
+            }
+            &:after {
+              width: 0;
+            }
+          }
+          .li-last {
+            &:after {
+              width: 0;
+            }
+          }
+        }
       }
-      .ft-first {
-        text-align: center;
-        padding: 0;
-        height: 130px;
-      }
-      .ft-last {
-        height: 130px;
-        text-align: center;
-        padding: 0;
-      }
-      .f-col-center {
-        text-align: center;
-        border: 0;
-        height: 160px;
-        width: 100%;
-        padding: 0px;
-        h4 {
-          font-size: 17px;
-          color: #4a4a4a;
-          margin-top: 0px;
+      .tp-contract {
+        margin-top: 8vw;
+        .contract-tel {
+          font-size: 5vw;
         }
-        h5 {
-          font-size: 14px;
-          color: #4a4a4a;
-          line-height: 22px;
+        .contract-time {
+          font-size: 4vw;
+          margin: 1.4vw 0 2.2vw;
+        }
+        .contract-shop {
+          img {
+            height: 5.6vw;
+            margin: 0 3vw;
+          }
         }
       }
-      .ft-contract {
-        margin-top: 16px;
-        font-size: 15px;
-        color: #4a4a4a;
-        letter-spacing: 0;
-        p {
-          margin: 0;
-        }
-        img {
-          width: 26px;
-          vertical-align: top;
-          position: relative;
-          top: 7px;
-          margin-right: 6px;
-        }
-        span {
-          font-size: 28px;
-          color: #666666;
-          text-align: left;
-        }
+      .tp-title {
+        font-size: 4vw;
+        margin-top: 14vw;
       }
     }
     .f-bt {
-      background: #333333;
-      height: 40px;
-      line-height: 40px;
-      font-size: 12px;
-      color: #ffffff;
-      text-align: center;
-    }
-    .col-xs-4 {
-      padding-right: 0;
-      padding-left: 0;
+      .ft-font {
+        background: rgb(231,233, 240);
+        line-height: 18px;
+        font-size: 12px;
+        text-align: center;
+        padding: 14px 15px;
+        color: #6e6e6e;
+        letter-spacing: 0.77px;
+        a {
+          color: #ffffff;
+        }
+      }
     }
   }
   @media (max-width: 430px) {
-    .f-tp {
-      .f-col-center {
-        h4 {
-          font-size: 16px;
-        }
-        h5 {
-          font-size: 13px;
-        }
-        .col-xs-3 {
-          padding: 0;
-        }
-      }
-    }
+
   }
   @media (max-width: 374px) {
-    .f-tp {
-      .f-col-center {
-        h4 {
-          font-size: 14px;
-        }
-        h5 {
-          font-size: 12px;
-        }
-      }
-    }
+
   }
 }
 
