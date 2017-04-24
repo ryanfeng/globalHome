@@ -33,15 +33,15 @@ html(lang='en')
         .school-con.school-con5.hidden-xs
             .container
                 .con-ft-block
-                    img.data-img.con5-img1(data-url="./images/produceServer/pro-v5-1.png")
-                    img.data-img.con5-img2(data-url="./images/produceServer/pro-v5-1.png")
-                    img.data-img.con5-img3(data-url="./images/produceServer/pro-v5-1.png")
+                    img.data-img.con5-img1(v-bind:src="listImage[0].url")
+                    img.data-img.con5-img2(v-bind:src="listImage[1].url")
+                    img.data-img.con5-img3(v-bind:src="listImage[2].url")
                     img.data-img.con5-img4(data-url="./images/produceServer/pro-v5-4.png")
                     img.data-img.con5-img6(data-url="./images/produceServer/pro-v5-6.png")
-                    img.data-img.con-arraw-con5.con5-img-left(data-url="./images/produceServer/pro-v5-left.png")
-                    img.data-img.con-arraw-con5.con5-img-right(data-url="./images/produceServer/pro-v5-left.png")
+                    img.data-img.con-arraw-con5.con5-img-right(@click="rightArraw" data-url="./images/produceServer/pro-v5-left.png")
+                    img.data-img.con-arraw-con5.con5-img-left(@click="leftArraw" data-url="./images/produceServer/pro-v5-left.png")
                     label.hidden-xs 看的见<br>数据可视化
-                    p 我的城市空气我知道
+                    p {{listImage[2].text}}
         .school-con.school-con6.hidden-xs(data-url="./images/produceServer/pro-v6.jpg")
             .container
                 .con-ft-block
@@ -108,9 +108,10 @@ html(lang='en')
                     h2
                         | 恒氧恒净的优质产品<br>
                         span 地球村新风净化设备-立柜式
-                    p
-                        | 了解产品详情
-                        img.data-img.con-arraw-12(data-url="./images/produceServer/pro-v12-1.png")
+                    a(href="./produceXF.html")
+                        p
+                            | 了解产品详情
+                            img.data-img.con-arraw-12(data-url="./images/produceServer/pro-v12-1.png")
         .school-con.school-con13
             .con-ft-block
                 h2 适用不同场景的其他产品
@@ -119,15 +120,18 @@ html(lang='en')
                         img.data-img(data-url="./images/produceServer/pro-v13-1.png")
                         p
                             span 飓风<br>空气复原机
-                            label
-                                |了解详情
-                                img.com13-arraw(src="./images/produceServer/pro--v13-3.png")
+                            a(href="./produceJF.html")
+                                label
+                                    |了解详情
+                                    img.com13-arraw.hidden-xs(src="./images/produceServer/pro--v13-3.png")
+                                    img.com13-arraw.visible-xs-inline-block(src="./images/produceServer/pro--v13-4.png")
                     .con13-block
                         p
                             span 空气复原机<br>S1
-                            label
-                                |了解详情
-                                img.com13-arraw(src="./images/produceServer/pro--v13-4.png")
+                            a(href="./produceS1.html")
+                                label
+                                    |了解详情
+                                    img.com13-arraw(src="./images/produceServer/pro--v13-4.png")
                         img.data-img(data-url="./images/produceServer/pro-v13-2.png")
         .school-con.school-con14
             .container
@@ -192,41 +196,31 @@ html(lang='en')
                 el: ".school-con5",
                 data: {
                     listImage: [
-                        "./images/produceServer/pro-v5-1.png",
-                        "./images/produceServer/pro-v5-1.png"
+                        {
+                            url: "./images/produceServer/pro-v5-1.png",
+                            text: "我的房间空气我知道"
+                        },
+                        {
+                            url: "./images/produceServer/pro-v5-2.png",
+                            text: "孩子班级空气我知道"
+                        },
+                        {
+                            url: "./images/produceServer/pro-v5-3.png",
+                            text: "我的城市空气我知道"
+                        }
                     ],
                     active: {
                         index: 0,
-                        url: "./images/produceServer/pro-v11-1.jpg",
-                        text: "我的城市空气我知道"
+                        url: "./images/produceServer/pro-v5-1.png",
+                        text: "我的城市空气我知道1"
                     }
                 },
                 methods: {
-                    nextUrl: function (index) {
-                        if (this.listImage.length == (index + 1)) {
-                            this.active = {
-                                index: 0,
-                                url: this.listImage[0]
-                            }
-                        } else {
-                            this.active = {
-                                index: index + 1,
-                                url: this.listImage[index + 1]
-                            }
-                        }
+                    rightArraw: function () {
+                        this.listImage.unshift(this.listImage.pop());
                     },
-                    lastUrl: function (index) {
-                        if (index == 0) {
-                            this.active = {
-                                index: this.listImage.length - 1,
-                                url: this.listImage[this.listImage.length - 1]
-                            }
-                        } else {
-                            this.active = {
-                                index: index - 1,
-                                url: this.listImage[index - 1]
-                            }
-                        }
+                    leftArraw: function () {
+                        this.listImage.push(this.listImage.shift());
                     }
                 }
             })

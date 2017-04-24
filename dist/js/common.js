@@ -245,10 +245,10 @@ $('html').css("font-size", $(window).width()*20/375);
     };
     //页面导航页面的定位
     var pathname = window.location.pathname;
-    if ((pathname.indexOf('produceXF') != -1) || (pathname.indexOf('produceJF') != -1) || (pathname.indexOf('produceS1') != -1)) {
-        headerData.produce.active = true;
-        $(".hd_dropdown").addClass('active');
-    }
+    // if ((pathname.indexOf('produceXF') != -1) || (pathname.indexOf('produceJF') != -1) || (pathname.indexOf('produceS1') != -1)) {
+    //     headerData.produce.active = true;
+    //     $(".hd_dropdown").addClass('active');
+    // }
 
     $.each(headerData, function (obj) {
         if (pathname.indexOf(obj) != -1) {
