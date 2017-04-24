@@ -55,17 +55,18 @@ html(lang='cmn-Hans-CN')
                 .container
                     section.con-ft-block.ft-color-FFF
                         h2 我们为健康屋提供的支持
-            article.bus-con.bus-con7
-                .container
-                    section.con-ft-block.ft-color-FFF
-                        h2 1/统一的装修指导
-                        img.data-img.con7-img2(data-url="./images/bus/bus-v7-1.png")
-            article.bus-con.bus-con8
-                .container
-                    section.con-ft-block
-                        img.data-img.con-arraw.con-arraw-left(@click="lastUrl(active.index)" data-url="./images/bus/bus-v8-1.png")
-                        img.bus-v8-bg(src="{{active.url}}")
-                        img.data-img.con-arraw.con-arraw-right(@click="nextUrl(active.index)" data-url="./images/bus/bus-v8-1.png")
+            div(style="overflow: hidden;")
+                article.bus-con.bus-con7
+                    .container
+                        section.con-ft-block.ft-color-FFF
+                            h2 1/统一的装修指导
+                            img.data-img.con7-img2(data-url="./images/bus/bus-v7-1.png")
+                article.bus-con.bus-con8
+                    .container
+                        section.con-ft-block
+                            img.data-img.con-arraw.con-arraw-left(@click="lastUrl(active.index)" data-url="./images/bus/bus-v8-1.png")
+                            img.bus-v8-bg(src="{{active.url}}")
+                            img.data-img.con-arraw.con-arraw-right(@click="nextUrl(active.index)" data-url="./images/bus/bus-v8-1.png")
             article.bus-con.bus-con9(data-url="./images/bus/bus-v9.jpg")
                 .container
                     section.con-ft-block
@@ -130,11 +131,7 @@ html(lang='cmn-Hans-CN')
                                 | 店铺运营定期培训
                                 | 全套宣传物料支持<br>
                                 | 大型活动策划支持
-            article.bus-con.bus-con12.hidden-xs(data-url="./images/bus/bus-v12.jpg")
-                .container
-                    section.con-ft-block
-                        img.data-img(data-url="./images/bus/bus-v12-1.png")
-            article.bus-con.bus-con12.visible-xs-inline-block
+            article.bus-con.bus-con12(data-url="./images/bus/bus-v12.jpg")
                 .container
                     section.con-ft-block
                         img.data-img(data-url="./images/bus/bus-v12-1.png")

@@ -484,11 +484,11 @@
         }
         .con4-img1 {
           height: auto;
-          width: 70%;
+          width: 50%;
         }
         .con4-img2 {
           height: auto;
-          width: 70%;
+          width: 45%;
         }
         p {
           font-size: 16px;
@@ -536,9 +536,9 @@
   }
 
   .bus-con6 {
-    height: 220px;
+    height: 145px;
     .con-ft-block {
-      padding-top: 70px;
+      padding-top: 40px;
       h2 {
         font-size: 28px;
       }
@@ -546,17 +546,17 @@
   }
 
   .bus-con7 {
-    height: 82vw;
+    height: 63vw;
     .con-ft-block {
       h2 {
         left: 10px;
-        top: 62vw;
+        top: 44vw;
         font-size: 20px
       }
       img {
         width: 80vw;
         top: 8vw;
-        right: 0vw;
+        right: -19vw;
         z-index: 2;
       }
     }
@@ -613,6 +613,7 @@
             left: 0;
             border: 1px solid rgb(213, 213, 213);
             border-radius: 50%;
+            opacity: 0.5;
           }
           .circle-in {
             width: 70%;

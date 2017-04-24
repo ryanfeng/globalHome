@@ -94,6 +94,7 @@
     padding-top: 80px;
     color: #7d7d7d;
     text-align: center;
+    opacity: 1;
     h2 {
       font-size: 48px;
     }
@@ -409,7 +410,7 @@
   height: 900px;
   background-color: rgb(227, 234, 210);
   .con-ft-block {
-    padding-top: 100px;
+    padding-top: 240px;
     font-size: 46px;
     h2 {
       font-size: 46px;
@@ -429,7 +430,7 @@
       color: #7d7d7d;
       line-height: 36px;
       text-align: center;
-      margin-top: 200px;
+      margin-top: 30px;
       cursor: pointer;
       .con-arraw-12 {
         margin-bottom: 60px;
@@ -527,7 +528,7 @@
 
 .school-con14 {
   height: 520px;
-  background-color: rgb(236, 238, 243);
+  background-color: #FFF;
   .con-ft-block {
     padding-top: 120px;
     img {
@@ -537,22 +538,30 @@
 }
 
 @media screen and (max-width: 767px) {
+  .xf-con-img1 {
+    width: 100%;
+    height: 127.734vw;
+  }
+  .xf-con-img2 {
+    width: 100%;
+    height: 135.868vw;
+  }
   .school-con1 {
     height: 70vw;
     background: #72c72c;
     .con-ft-block {
       margin-top: 0;
-      padding-top: 15vw;
+      padding-top: 13vw;
       img {
         height: auto;
-        width: 70vw;
+        width: 80vw;
       }
     }
   }
 
   .school-con2 {
     position: relative;
-    height: 112vw;
+    height: 106.9vw;
     background-color: rgb(236, 238, 243);
     .con-ft-block {
       text-align: center;
@@ -578,9 +587,11 @@
   }
 
   .school-con3 {
-    height: 60vw;
+    height: 40vw;
+    position: relative;
+    z-index: 3;
     .con-ft-block {
-      padding-top: 20vw;
+      padding-top: 11vw;
       img {
         height: auto;
         width: 80vw;
@@ -893,14 +904,14 @@
   }
 
   .school-con12 {
-    height: 300px;
+    height: 220px;
     .con-ft-block {
       padding-top: 20px;
       h2 {
-        font-size: 26px;
+        font-size: 24px;
         line-height: 34px;
         span {
-          font-size: 24px;
+          font-size: 20px;
         }
       }
       p {
@@ -913,7 +924,7 @@
         line-height: 30px;
         font-size: 18px;
         text-align: center;
-        margin-top: 64px;
+        margin-top: 14px;
         cursor: pointer;
         .con-arraw-12 {
           margin-bottom: 60px;
@@ -940,6 +951,7 @@
         height: 150px;
         margin-bottom: 0;
         background: #FFF;
+        margin-bottom: 30px;
         img {
           height: 117px;
           margin-top: 33px;
