@@ -541,10 +541,12 @@
   .xf-con-img1 {
     width: 100%;
     height: 127.734vw;
+    background-color: #72c72c;
   }
   .xf-con-img2 {
     width: 100%;
     height: 135.868vw;
+    background-color: rgb(246,246,246);
   }
   .school-con1 {
     height: 70vw;
@@ -561,7 +563,7 @@
 
   .school-con2 {
     position: relative;
-    height: 106.9vw;
+    height: auto;
     background-color: rgb(236, 238, 243);
     .con-ft-block {
       text-align: center;
@@ -572,9 +574,11 @@
         font-size: 26px;
         width: 100%;
         margin-right: 0;
+        margin-bottom: 3vw;
+        margin-top: 5vw;
         span {
           width: 100%;
-          margin-top: 20px;
+          margin-top: 8vw;
           font-size: 20px;
           line-height: 28px;
         }
@@ -616,7 +620,7 @@
       }
       img {
         height: auto;
-        width: 90vw;
+        width: 89vw;
         margin-left: 0;
         margin-bottom: 0;
       }
@@ -786,6 +790,7 @@
 
   .school-con8 {
     height: 370px;
+    background-color: rgb(198, 190, 187);
     .con-ft-block {
       padding-top: 30px;
       h2 {
@@ -803,6 +808,7 @@
   }
 
   .school-con9 {
+    background-color: rgb(83, 86, 91);
     height: 380px;
     .con-ft-block {
       padding-top: 30px;

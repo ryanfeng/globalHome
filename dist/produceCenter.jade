@@ -1,0 +1,38 @@
+doctype html
+html(lang='en')
+    head
+        title 产品中心-浙江地球村环保科技有限公司官网
+        include common/meta.jade
+        link(href='../css/produceCenter.css', rel='stylesheet')
+    body
+        include common/head.jade
+        main.center
+            .center-bg
+            section
+                h1 产品中心
+                .center-xf
+                    h2 新风净化设备<br>立柜式
+                        br
+                        br
+                        a(href="./produceXF.html")
+                            label.detail-btn 了解详情
+                    img(src='./images/proXf/pro-xf-2.jpg')
+                .center-s1-jf
+                    .block-left.block.block-active
+                        img.center-pro(src="./images/produceServer/pro-v13-1.png")
+                        .block-wrapper
+                            span 飓风<br>空气复原机<br>
+                            a(href="./produceJF.html")
+                                label.detail-btn 了解详情
+                    .block-right.block
+                        .block-wrapper
+                            span 空气复原机<br>S1<br>
+                            a(href="./produceS1.html")
+                                label.detail-btn 了解详情
+                        img.center-pro(src="./images/produceServer/pro-v13-2.png")
+        include common/foot.jade
+        script.
+            $(".block").mouseenter(function () {
+                $(".block").removeClass("block-active");
+                $(this).addClass("block-active");
+            })

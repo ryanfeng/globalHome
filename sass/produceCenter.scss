@@ -1,0 +1,210 @@
+.center {
+  .center-bg {
+    width: 100%;
+    height: 560px;
+    background-color: rgb(200, 200, 200);
+    background-image: url("../images/produceCenter/center-bg.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  section {
+    text-align: center;
+    h1 {
+      height: 170px;
+      line-height: 170px;
+      background-color: rgb(244, 244, 244);
+      font-size: 36px;
+      color: #939393;
+      margin: 0;
+    }
+    .center-xf {
+      width: 100%;
+      height: 410px;
+      background-color: #FFF;
+      h2 {
+        display: inline-block;
+        font-size: 24px;
+        color: #939393;
+        text-align: left;
+        margin-right: 100px;
+        margin-left: 180px;
+        line-height: 32px;
+        vertical-align: top;
+        margin-top: 120px;
+      }
+      img {
+        vertical-align: top;
+        height: 410px;
+      }
+    }
+    .detail-btn {
+      font-size: 20px;
+      display: inline-block;
+      border: 1px solid #939393;
+      border-radius: 28px;
+      width: 142px;
+      height: 38px;
+      line-height: 38px;
+      text-align: center;
+      cursor: pointer;
+      color: #939393;
+      &:after {
+        background-image: url(../images/produceCenter/arraw-grey.png);
+        background-size: cover;
+        background-position: 50%;
+        content: "";
+        display: inline-block;
+        width: 11px;
+        height: 20px;
+        margin-left: 6px;
+        position: relative;
+        top: 2px;
+      }
+    }
+    .center-s1-jf {
+      background-color: rgb(244, 244, 244);
+      height: 540px;
+      .block {
+        display: inline-block;
+        margin-top: 40px;
+        width: 50%;
+        height: 410px;
+        font-size: 24px;
+        color: #939393;
+        background-color: #FFF;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all .3s;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -ms-transition: all .3s;
+        .block-wrapper {
+          display: inline-block;
+          margin: 140px 70px 0;
+        }
+        .detail-btn {
+          margin-top: 20px;
+        }
+      }
+      .block-left {
+        text-align: right;
+        .center-pro {
+          height: 261px;
+          vertical-align: top;
+          margin-top: 82px;
+        }
+        span {
+          text-align: left;
+        }
+      }
+      .block-right {
+        text-align: left;
+        .center-pro {
+          vertical-align: top;
+          height: 319px;
+          margin-top: 92px;
+        }
+        span {
+          text-align: left;
+        }
+      }
+      .block-active {
+        background-color: #73c92d;
+        color: #FFF;
+        .detail-btn {
+          color: #FFF;
+          border: 1px solid #fff;
+          &:after {
+            background-image: url(../images/produceCenter/arraw-white.png);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .center {
+    .center-bg {
+      height: 70vw;
+    }
+    section {
+      h1 {
+        height: 70px;
+        line-height: 70px;
+        font-size: 24px;
+      }
+      .center-xf {
+        height: 403px;
+        overflow: hidden;
+        h2 {
+          font-size: 22px;
+          text-align: center;
+          margin-right: 0;
+          margin-left: 0;
+          line-height: 32px;
+          margin-top: 24px;
+        }
+        img {
+          height: 242px;
+        }
+      }
+      .detail-btn {
+        font-size: 16px;
+        border-radius: 15PX;
+        width: 124px;
+        height: 32px;
+        line-height: 32px;
+        &:after {
+          width: 8px;
+          height: 15px;
+          top: 1px;
+        }
+      }
+      .center-s1-jf {
+        height: auto;
+        font-size: 0;
+        .block {
+          margin-top: 40px;
+          width: 100%;
+          height: 240px;
+          font-size: 20px;
+          .block-wrapper {
+            margin: 60px 0 0 22px;
+          }
+          .detail-btn {
+            margin-top: 20px;
+          }
+        }
+        .block-left {
+          text-align: center;
+          .center-pro {
+            height: 161px;
+            margin-top: 42px;
+          }
+          span {
+            text-align: left;
+          }
+        }
+        .block-right {
+          height: 210px;
+          text-align: center;
+          .block-wrapper {
+            margin: 50px 22px 0 0;
+          }
+          .center-pro {
+            height: 174px;
+            margin-top: 37px;
+          }
+          span {
+            text-align: center;
+          }
+        }
+        .block-active {
+          color: #FFF;
+        }
+      }
+    }
+  }
+}

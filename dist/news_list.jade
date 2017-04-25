@@ -4,10 +4,10 @@ html(lang='en')
         title 地球村“环保示范学校”—— 杭州市时代小学篇
         include common/meta.jade
         link(href='./css/news.css', rel='stylesheet')
-    body(style="background: #FFF;")
+    body(style="background: rgb(236,238,243);")
         include common/head.jade
         nav.bar
-            a(href="/") 地球村首页
+            a(href="/") 关于地球村
             span >
             label 新闻资讯
         main.main.pd0.main1
@@ -62,7 +62,6 @@ html(lang='en')
                                     data: {
                                         items: listObj.data,
                                         styleObject: function (imgUrl) {
-                                            console.log(imgUrl)
                                             return {'background-image': "url(" + imgUrl + ")"}
                                         }
                                     },
