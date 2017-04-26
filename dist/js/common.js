@@ -253,7 +253,7 @@ $('html').css("font-size", $(window).width()*20/375);
     console.log(pathname);
     $.each(headerData, function (obj) {
         if(pathname == "/") {
-            headerData['name'].active = true;
+            headerData['home'].active = true;
         }
         if (pathname.indexOf(obj) != -1) {
             headerData[obj].active = true;
