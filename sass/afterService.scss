@@ -7,12 +7,12 @@
   background-position: 50%;
   background-repeat: no-repeat;
   .title1 {
-    font-size: 50px;
+    font-size: 40px;
     color: #ffffff;
   }
   .title2 {
-    font-size: 50px;
-    padding-top: 100px;
+    font-size: 40px;
+    padding-top: 140px;
     color: #ffffff;
   }
   .after-btn {
@@ -22,12 +22,12 @@
     display: inline-block;
     border: 1px solid #ffffff;
     border-radius: 46px;
-    width: 226px;
-    height: 68px;
-    line-height: 68px;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
     box-sizing: border-box;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 20px;
     color: #FFFFFF;
   }
   label:nth-of-type(1) {
@@ -55,8 +55,8 @@
         width: 480px;
         margin-bottom: 110px;
         img {
-          width: 120px;
-          height: 120px;
+          width: 90px;
+          height: 90px;
           vertical-align: top;
           margin-right: 30px;
         }
@@ -67,7 +67,7 @@
           display: inline-block;
           text-align: left;
           label {
-            font-size: 24px;
+            font-size: 20px;
             color: #73c92d;
             margin-bottom: 7px;
           }
@@ -90,7 +90,7 @@
       text-align: left;
       h2 {
         text-align: left;
-        font-size: 24px;
+        font-size: 20px;
         color: #75c930;
         margin-top: 50px;
         margin-bottom: 18px;
@@ -123,7 +123,7 @@
       width: 140px;
       height: 32px;
       line-height: 32px;
-      font-size: 18px;
+      font-size: 16px;
     }
     label:nth-of-type(1) {
       margin-right: 10px;
@@ -142,8 +142,8 @@
           width: 100%;
           margin-bottom: 40px;
           img {
-            width: 120px;
-            height: 120px;
+            width: 90px;
+            height: 90px;
             margin-right: 0;
             margin-bottom: 20px;
           }

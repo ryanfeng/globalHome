@@ -102,10 +102,10 @@
         margin-bottom: 50px;
       }
       .con4-img1 {
-        height: 122px;
+        height: 100px;
       }
       .con4-img2 {
-        height: 106px;
+        height: 90px;
       }
       p {
         font-size: 20px;
@@ -158,13 +158,31 @@
 .bus-con6 {
   background: #73c92d;
   height: 360px;
+  position: relative;
+  overflow: hidden;
   .con-ft-block {
     padding-top: 130px;
     h2 {
       font-size: 46px;
-      color: #ffffff;
+      color: #fff;
     }
   }
+  //.bus-con6-active {
+  //  position: absolute;
+  //  top: 0;
+  //  left: 0;
+  //  height: 360px;
+  //  width: 100%;
+  //  border-radius: 90%;
+  //  background: #73c92d;
+  //  .con-ft-block {
+  //    padding-top: 130px;
+  //    h2 {
+  //      font-size: 46px;
+  //      color: #73c92d;
+  //    }
+  //  }
+  //}
 }
 
 .bus-con7 {
@@ -241,6 +259,7 @@
           left: 0;
           border: 1px solid rgb(213, 213, 213);
           border-radius: 50%;
+          animation: scale-big 1.3s infinite;
         }
         .circle-in {
           width: 70%;
@@ -330,9 +349,14 @@
         top: 60px;
         left: 80px;
         text-align: left;
+        width: 300px;
+        display: inline-block;
         strong {
+          display: inline-block;
           font-weight: 400;
           font-size: 30px;
+          width: 100%;
+          margin-bottom: 10px;
         }
         span {
           font-family: ArialMT;
@@ -343,6 +367,7 @@
       .label-right {
         text-align: right;
         margin-right: 160px;
+        line-height: 30px;
       }
     }
   }
@@ -687,7 +712,7 @@
     height: auto;
     background-color: #FFFFFF;
     .con-ft-block {
-      padding-top: 40px;
+      padding-top: 10px;
       .con11-block {
         margin-bottom: 20px;
         img {
@@ -772,4 +797,48 @@
 .bus-con-img {
   width: 100%;
   min-height: 160px;
+}
+
+@keyframes scale-big {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(1.2);
+  }
+}
+
+@-webkit-keyframes scale-big {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(1.2);
+  }
+}
+
+@-moz-keyframes scale-big {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(1.2);
+  }
+}
+
+@-o-keyframes scale-big {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(1.2);
+  }
 }

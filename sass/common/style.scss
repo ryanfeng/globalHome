@@ -365,10 +365,16 @@ a {
     }
     .navbar-default .navbar-toggle:focus,
     .navbar-default .navbar-toggle:hover {
-      background-color: #ddd;
+      background-color: auto;
     }
     .container > .navbar-header {
       height: 60px;
+    }
+    .navbar-toggle {
+      background-color: #DDD;
+    }
+    .collapsed {
+      background-color: #FFF;
     }
     .container {
       padding-bottom: 0;
@@ -721,7 +727,7 @@ a {
 
   @media (max-width: 767px) {
     .f-tp {
-      height: 103vw;
+      height: 86vw;
       width: 100%;
       text-align: center;
       background-size: cover;
@@ -732,7 +738,7 @@ a {
         ul {
           padding: 10vw 0 0 0;
           li {
-            padding: 0 6vw;
+            padding: 0 4vw;
             margin-bottom: 5vw;
             img {
               height: 6vw;

@@ -31,6 +31,7 @@
 }
 
 .global-con1 {
+  background-color: rgb(61, 61, 61);
   height: 800px;
   .con-ft-block {
     padding-top: 240px;
@@ -41,7 +42,7 @@
       color: #FFFFFF;
     }
     h3 {
-      font-size: 60px;
+      font-size: 64px;
       color: #74c92e;
       margin-top: 15px;
       margin-bottom: 26px
@@ -108,35 +109,37 @@
 }
 
 .global-con3 {
+  background-color: rgb(22, 24, 63);
   height: 602px;
   .con-ft-block {
     padding-top: 180px;
     h2 {
-      font-size:36px;
+      font-size: 36px;
     }
     h3 {
       margin: 40px 0 24px;
-      font-size:32px;
+      font-size: 32px;
     }
     p {
-      font-size:22px;
+      font-size: 22px;
     }
   }
 }
 
 .global-con4 {
+  background-color: rgb(236, 236, 236);
   height: 750px;
   .con-ft-block {
     padding-top: 100px;
     h2 {
-      font-size:36px;
-      color:#707070;
+      font-size: 36px;
+      color: #707070;
       margin-bottom: 26px;
     }
     p {
-      font-size:20px;
-      color:#707070;
-      line-height:36px;
+      font-size: 20px;
+      color: #707070;
+      line-height: 36px;
     }
   }
 }
@@ -151,30 +154,30 @@
     position: absolute;
     margin-left: 50px;
     h2 {
-      font-size:36px;
-      color:#707070;
+      font-size: 36px;
+      color: #707070;
       margin-bottom: 26px;
     }
     p {
-      font-size:20px;
-      color:#707070;
-      line-height:36px;
+      font-size: 20px;
+      color: #707070;
+      line-height: 36px;
     }
   }
 }
 
 .global-con6 {
-  background:#73c92d;
-  height:700px;
+  background: #73c92d;
+  height: 700px;
   .con-ft-block {
     padding-top: 100px;
     h2 {
-      font-size:36px;
+      font-size: 36px;
       margin-bottom: 26px;
     }
     p {
-      font-size:20px;
-      line-height:36px;
+      font-size: 20px;
+      line-height: 36px;
     }
     img {
       height: 248px;
@@ -183,31 +186,32 @@
   }
 }
 
-
 .global-con7 {
+  background-color: rgb(78, 116, 155);
   height: 750px;
   .con-ft-block {
     padding-top: 140px;
     h2 {
-      font-size:36px;
+      font-size: 36px;
       margin-bottom: 40px;
     }
     h3 {
-      font-size:32px;
+      font-size: 32px;
       margin-bottom: 20px;
     }
     p {
-      font-size:20px;
-      line-height:36px;
+      font-size: 20px;
+      line-height: 36px;
     }
   }
 }
 
 .global-con8 {
   height: 610px;
+  background-color: rgb(72, 72, 78);
   .con-ft-block {
     padding-top: 180px;
-    img{
+    img {
       height: 199px;
     }
   }
@@ -262,14 +266,14 @@
     .con-ft-block {
       padding-top: 40px;
       h2 {
-        font-size:22px;
+        font-size: 22px;
       }
       h3 {
         margin: 30px 0 20px;
-        font-size:18px;
+        font-size: 18px;
       }
       p {
-        font-size:13px;
+        font-size: 13px;
       }
     }
   }
@@ -279,12 +283,12 @@
     .con-ft-block {
       padding-top: 20px;
       h2 {
-        font-size:20px;
+        font-size: 20px;
         margin-bottom: 12px;
       }
       p {
-        font-size:14px;
-        line-height:26px;
+        font-size: 14px;
+        line-height: 26px;
       }
     }
   }
@@ -296,27 +300,27 @@
       margin-left: -40px;
       width: auto;
       h2 {
-        font-size:20px;
+        font-size: 20px;
         margin-bottom: 20px;
       }
       p {
-        font-size:14px;
-        line-height:20px;
+        font-size: 14px;
+        line-height: 20px;
       }
     }
   }
 
   .global-con6 {
-    height:290px;
+    height: 290px;
     .con-ft-block {
       padding-top: 20px;
       h2 {
-        font-size:20px;
+        font-size: 20px;
         margin-bottom: 14px;
       }
       p {
-        font-size:14px;
-        line-height:20px;
+        font-size: 14px;
+        line-height: 20px;
       }
       img {
         height: 100px;
@@ -325,22 +329,21 @@
     }
   }
 
-
   .global-con7 {
     height: 480px;
     .con-ft-block {
       padding-top: 20px;
       h2 {
-        font-size:24px;
+        font-size: 24px;
         margin-bottom: 26px;
       }
       h3 {
-        font-size:18px;
+        font-size: 18px;
         margin-bottom: 18px;
       }
       p {
-        font-size:14px;
-        line-height:24px;
+        font-size: 14px;
+        line-height: 24px;
         label {
           width: 100%;
           display: inline-block;
@@ -354,7 +357,7 @@
     height: 240px;
     .con-ft-block {
       padding-top: 80px;
-      img{
+      img {
         height: 80px;
       }
     }
