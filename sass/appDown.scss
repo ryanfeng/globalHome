@@ -13,13 +13,13 @@
       height: 190px;
       display: inline-block;
       border-radius: 8px;
-      border:1px solid #979797;
+      border: 1px solid #979797;
       position: relative;
       .logo {
-        height: 62px;
+        height: 72px;
         position: absolute;
-        top: -44px;
-        left: 65px;
+        top: -55px;
+        left: 60px;
         border: 5px solid #f7f7f7;
         background: #f7f7f7;
       }
@@ -74,10 +74,10 @@
       .down-block {
         margin: 0 5%;
         .logo {
-          height: 62px;
+          height: 72px;
           position: absolute;
-          top: -44px;
-          left: 65px;
+          top: -55px;
+          left: 60px;
         }
         .dwon-2wm {
           margin-left: 0;
@@ -100,7 +100,6 @@
     }
   }
 }
-
 
 @media (max-width: 490px) {
   .main-top {
