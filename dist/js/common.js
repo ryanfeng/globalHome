@@ -250,7 +250,11 @@ $('html').css("font-size", $(window).width()*20/375);
     //     $(".hd_dropdown").addClass('active');
     // }
 
+    console.log(pathname);
     $.each(headerData, function (obj) {
+        if(pathname == "/") {
+            headerData['name'].active = true;
+        }
         if (pathname.indexOf(obj) != -1) {
             headerData[obj].active = true;
         }

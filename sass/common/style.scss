@@ -720,7 +720,9 @@ a {
       color: #6e6e6e;
       letter-spacing: 0.77px;
       a {
-        color: #ffffff;
+        display: inline-block;
+        margin-right: 10px;
+        color: #6e6e6e;
       }
     }
   }
