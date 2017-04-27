@@ -41,7 +41,7 @@ html(lang='en')
                     img.data-img.con5-img6(data-url="./images/produceServer/pro-v5-6.jpg")
                     img.data-img.con-arraw-con5.con5-img-right(@click="rightArraw" data-url="./images/produceServer/pro-v5-left.png")
                     img.data-img.con-arraw-con5.con5-img-left(@click="leftArraw" data-url="./images/produceServer/pro-v5-left.png")
-                    label.hidden-xs 看的见<br>数据可视化
+                    label.hidden-xs 看的见<br><span>数据可视化</span>
                     p {{listImage[2].text}}
         img.data-img.xf-con-img.visible-xs-inline-block.xf-con-img2(data-url="./images/produceServer/pro-v6-min.jpg")
         .school-con.school-con6.hidden-xs(data-url="./images/produceServer/pro-v6.jpg")
@@ -104,7 +104,7 @@ html(lang='en')
                         img.con10-img1(src="{{active.url}}")
                         img.data-img.con-arraw.con-arraw-right(@click="nextUrl(active.index)" data-url="./images/bus/bus-v8-1.png")
                         p 学校空气质量管理系统<br>各班级空气质量状况实时知晓 / 设备故障可预见性维护 / 各个滤网寿命一键知晓
-        .school-con.school-con12(data-url="./images/produceServer/pro-v12.jpg")
+        .school-con.school-con12.hidden-xs(data-url="./images/produceServer/pro-v12.jpg")
             .container
                 .con-ft-block.ft-color-FFF
                     h2
@@ -114,6 +114,8 @@ html(lang='en')
                         p
                             | 了解产品详情
                             img.data-img.con-arraw-12(data-url="./images/produceServer/pro-v12-1.png")
+        a(href="./produceXF.html")
+            img.data-img.xf-con-img.visible-xs-inline-block.xf-con-img1(data-url="./images/produceServer/pro-v12-mobile.jpg")
         .school-con.school-con13
             .con-ft-block
                 h2 适用不同场景的其他产品
@@ -157,12 +159,12 @@ html(lang='en')
                 el: ".con11-back",
                 data: {
                     listImage: [
+                        "./images/produceServer/pro-v11-2.jpg",
                         "./images/produceServer/pro-v11-1.jpg",
-                        "./images/produceServer/pro-v11-2.jpg"
                     ],
                     active: {
                         index: 0,
-                        url: "./images/produceServer/pro-v11-1.jpg"
+                        url: "./images/produceServer/pro-v11-2.jpg"
                     }
                 },
                 methods: {

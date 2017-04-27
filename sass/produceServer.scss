@@ -110,7 +110,7 @@
       height: 400px;
       margin-left: 61px;
       margin-top: 25px;
-      margin-bottom: 22px;
+      margin-bottom: 12px;
     }
   }
 }
@@ -159,7 +159,7 @@
       height: 640px;
       top: -49px;
       left: 50%;
-      margin-left: -165px;
+      margin-left: -155px;
       z-index: 0;
     }
     .con5-img-left {
@@ -193,12 +193,16 @@
       -moz-transform: rotate(180deg);
     }
     label {
-      font-size: 32px;
+      font-size: 48px;
       color: #fff;
       text-align: left;
       /* margin-top: 63px; */
       position: relative;
       top: 23px;
+      line-height: 37px;
+      span {
+        font-size: 24px;
+      }
     }
     p {
       font-size: 22px;
