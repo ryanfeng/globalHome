@@ -5,155 +5,103 @@ html(lang='en')
         meta(name="keywords" content="家用新风机,新风机,空气净化")
         meta(name="description" content="地球村家用新风机全屋空气净化,内外双循环,还空气流动,恒氧超大新风,恒净六级复原,地球村家用新风机30年质量保障,让空气清新可见。")
         include common/meta.jade
-        link(href='../css/produce-xf.css', rel='stylesheet')
+        link(href='./css/produce-xf.css', rel='stylesheet')
+        link(href='./css/common/global-awesome.min.css', rel='stylesheet')
     body
         include common/head.jade
         .produde-nav
             .container
-                | 新风机
+                | 新风净化设备/立柜式
                 ul
-                    li.active.nav-class.hidden-xs.nav-class1(onclick="click_scroll('xf1')") 作用原理
-                    li.nav-class.hidden-xs.nav-class2(onclick="click_scroll('xf2')") 恒氧
-                    li.nav-class.hidden-xs.nav-class3(onclick="click_scroll('xf3')") 恒净
-                    li.nav-class.hidden-xs.nav-class4(onclick="click_scroll('xf4')") 低噪
-                    li.nav-class.hidden-xs.nav-class5(onclick="click_scroll('xf5')") 智能
-                    li.nav-class.hidden-xs.nav-class6(onclick="click_scroll('xf6')") 电机
-                    li.nav-class.hidden-xs.nav-class7(onclick="click_scroll('xf7')") 安装
-                    li.nav-class.hidden-xs.nav-class8(onclick="click_scroll('xf8')") 设计
+                    li.active.nav-class.hidden-xs.nav-class1(onclick="click_scroll('xf1')") 功能
+                    li.nav-class.hidden-xs.nav-class2(onclick="click_scroll('xf2')") 结构
+                    li.nav-class.hidden-xs.nav-class3(onclick="click_scroll('xf3')") 参数
                     //a(href="https://globalvillage.jd.com/")
                     //    li.li-last 现在购买
         .produce-nav-fix
             .container
-                | 新风机
+                | 新风净化设备/立柜式
                 ul
-                    li.active.nav-class.hidden-xs.nav-class1(onclick="click_scroll('xf1')") 作用原理
-                    li.nav-class.hidden-xs.nav-class2(onclick="click_scroll('xf2')") 恒氧
-                    li.nav-class.hidden-xs.nav-class3(onclick="click_scroll('xf3')") 恒净
-                    li.nav-class.hidden-xs.nav-class4(onclick="click_scroll('xf4')") 低噪
-                    li.nav-class.hidden-xs.nav-class5(onclick="click_scroll('xf5')") 智能
-                    li.nav-class.hidden-xs.nav-class6(onclick="click_scroll('xf6')") 电机
-                    li.nav-class.hidden-xs.nav-class7(onclick="click_scroll('xf7')") 安装
-                    li.nav-class.hidden-xs.nav-class8(onclick="click_scroll('xf8')") 设计
+                    li.active.nav-class.hidden-xs.nav-class1(onclick="click_scroll('xf1')") 功能
+                    li.nav-class.hidden-xs.nav-class2(onclick="click_scroll('xf2')") 结构
+                    li.nav-class.hidden-xs.nav-class3(onclick="click_scroll('xf3')") 参数
                     //a(href="https://globalvillage.jd.com/")
                     //    li.li-last 现在购买
-        .xf-con.xf-con1.hidden-xs(data-url="http://qnstatic.globalvillage.biz/produce/xf-base1.png")
+        .xf-con.xf-con1.hidden-xs#xf1(data-url="./images/proXf/pro-xf-1.jpg")
+            .container
+                .con-ft-block
+                    h2 地球村新风净化设备<br>立柜式
+                    p 800m³/h新风量<br>99.7%净化效率<br>99.9%除菌率<br>
         .xf-con.xf-con2.hidden-xs
             .container
-                .con-ft-block 影响校园空气质量的因素
-                .con-ft-sm.con-ft-sm2
-                    .accordion
-                        ul
-                            li
-                                div.title
-                                    img.data-img(data-url="../images/produce/xf-co21.png")
-                                    .block
-                                        p.topic CO<sub>2</sub>
-                                        p.con 当室内的CO<sub>2</sub>浓度≥1500ppm时，学生的精神将会变差、注意力将下降、易进入瞌睡状态。
-                                img.bg-img.data-img(data-url="http://qnstatic.globalvillage.biz/produce/xf-big-co2.png")
-                            li
-                                div.title
-                                    img.data-img(data-url="../images/produce/xf-wm1.png")
-                                    .block
-                                        p.topic 雾霾
-                                        p.con 雾霾中的细颗粒物会随呼吸进入支气管和肺部，对肺部和整个呼吸系统造成不可逆转的伤害。
-                                img.bg-img.data-img(data-url="http://qnstatic.globalvillage.biz/produce/xf-big-wm.png")
-                            li
-                                div.title
-                                    img.data-img(data-url="../images/produce/xf-jq1.png")
-                                    .block
-                                        p.topic 甲醛、苯等
-                                        p.con 甲醛等有机挥发性气态污染物主要来源于装修污染，由此引发的教室内甲醛超标事件屡见不鲜。
-                                img.bg-img.data-img(data-url="http://qnstatic.globalvillage.biz/produce/xf-big-jq.png")
-                            li
-                                div.title
-                                    img.data-img(data-url="../images/produce/xf-vsw1.png")
-                                    .block
-                                        p.topic 交叉感染
-                                        p.con 细菌、病菌、真菌等容易在空气中传播，引发交叉感染，出现“一个生病，一片倒下”的情况。
-                                img.bg-img.data-img(data-url="http://qnstatic.globalvillage.biz/produce/xf-big-vsw.png")
-        .xf-con.xf-con3.hidden-xs#xf1(data-url="http://qnstatic.globalvillage.biz/produce/xf-base3.png")
+                .con-ft-block
+                    h2 超大风量<br><span>保证空气新鲜</span>
+                .con-ft-sm
+                    p 独特风机设计&nbsp;&nbsp;&nbsp;&nbsp;800m³/h新风量&nbsp;&nbsp;&nbsp;&nbsp;92%有效换气率
+                    img.data-img(data-url="./images/proXf/pro-xf-2.jpg")
+        .xf-con.xf-con3.hidden-xs(data-url="./images/proXf/pro-xf-3.jpg")
             .container
-                .con-ft-block.ft-color-FFF 地球村新风机<br>内外双循环&nbsp;&nbsp;&nbsp;还空气流动
-                .con-ft-sm.con-ft-sm3 24小时新风换气  ／  室内外双循环  ／排出污浊空气  ／空气流通顺畅
-                img.sm3-leaves.data-img(data-url='../images/produce/xf-leaves.png')
-                img.sm3-arrow.data-img(data-url='../images/produce/xf-arraw.png')
-        .xf-con.xf-con4.hidden-xs#xf2(data-url="../images/produce/xf-base4.png")
+                .con-ft-block.ft-color-FFF
+                    h2 高效净化<br><span>保证空气洁净</span>
+                .con-ft-sm.con-ft-sm3
+                    p 0.1μm 最小捕获<br>初效、中效、高效多级过滤，拦截过滤小至0.1微米细小颗粒污染物。
+                    p 99.9%除菌率<br>内置UV杀菌模块，有效杀灭细菌、病毒等。
+                img.sm3-arrow.data-img(data-url='./images/proXf/pro-xf-3-1.png')
+        .slide-awesome.dowebok.hidden-xs(data-slidizle)
+            ul(data-slidizle-content)
+                li.xf-con.xf-con4(style="background-image: url('./images/proXf/pro-xf-4-1.jpg');" )
+                    .container
+                        .con-ft-block1
+                            h2 使用效果眼见为实
+                            p 室内PM2.5浓度VS室外PM2.5浓度<br>室内CO2浓度  室内温湿度
+                li.xf-con.xf-con5(style="background-image: url('./images/proXf/pro-xf-5-1.jpg');" )
+                    .container
+                        .con-ft-block1
+                            h2 使用效果眼见为实
+                            p 空气质量实时排名
+            ul(data-slidizle-navigation)
+        .xf-con.xf-con6.hidden-xs(data-url="./images/proXf/pro-xf-6.png")
             .container
-                .con-ft-block 恒氧<br>超大新风，还空气新鲜
-                .con-ft-sm.con-ft-sm4 新风量900m<sup>3</sup>/h&nbsp;&nbsp;&nbsp;&nbsp;负离子增益空气 &nbsp;&nbsp;&nbsp;&nbsp;360度全方位输送新风
-        .xf-con.xf-con5.hidden-xs#xf3(data-url="../images/produce/xf-base5.png")
+                .con-ft-block
+                    h2 科学计算滤网寿命
+                    p 以滤网容尘量作为计算依据，通过采集国家环保局对设备所在区域颗粒物浓度的监测数据，<br>结合设备使用时长、运行风量、运行时间等因素，通过大数据科学计算滤网寿命。
+                    img.data-img(data-url="./images/proXf/pro-xf-6-1.png")
+        .xf-con.xf-con7.hidden-xs
             .container
-                .con-ft-block.ft-color-FFF 恒净<br>六级复原，还空气洁净
-                .con-ft-sm.con-ft-sm5
-                    |纯物理复原，层层过滤，不产生二次污染。<br>
-                    |PM0.1以上的颗粒物去除率99.9%以上，保障PM2.5浓度≤35μg/m<sup>3</sup>。<br>
-                    |冷阴极光子管结合纳米贵金属催化网彻底分解还原甲醛等气态污染物，保障甲醛浓度≤0.08mg/m<sup>3</sup>。<br>
-                    |短波光子灭杀多种常见细菌、病菌和真菌等，灭杀率99%以上，医疗级杀菌有效防止交叉感染。<br>
-                    img.ft-arraw.data-img(data-url="../images/produce/xf-arraw-right.png")
-        .xf-con.xf-con6.hidden-xs#xf4(data-url="http://qnstatic.globalvillage.biz/produce/xf-base6.png")
+                .con-ft-block 以2016年北京日均PM2.5浓度73μg/m³，日均PM10浓度92μg/m³，<br>每天开机8小时计算，滤网更换周期：
+                .con-ft-sm
+                    img.data-img(data-url="./images/proXf/pro-xf-7.png")
+        .xf-con.xf-con8.hidden-xs#xf2(data-url="./images/produceServer/pro-v7.jpg")
             .container
-                .con-ft-block 低噪<br>极致静音，不打扰
-                .con-ft-sm.con-ft-sm6
-                    p 上课噪音：≤45dB（低档）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下课噪音：≤60dB（高档）
-                    .sm6-block.sm6-block-left
-                        img.data-img(data-url="../images/produce/xf-sm6-2.png")
-                        p 落叶的声音<br>20dB
-                    .sm6-block
-                        img.data-img(data-url="../images/produce/xf-sm6-1.png")
-                        p 图书馆翻书的声音<br>40dB
-        .xf-con.xf-con7.hidden-xs#xf5(data-url="http://qnstatic.globalvillage.biz/produce/xf-base7.png")
+                .con-ft-block
+                    h2 产品结构
+                    img.data-img(data-url="./images/proXf/pro-xf-8-1.png")
+        .xf-con.xf-con9.hidden-xs#xf3
             .container
-                .con-ft-block.ft-color-FFF 智能物联&nbsp;&nbsp;&nbsp;&nbsp;让空气可见
-                .con-ft-sm.con-ft-sm7 家长、老师可以查看室外空气质量、室内开机前后的空气质量，实时比对。
-        .xf-con.xf-con8.hidden-xs#xf6(data-url="../images/produce/xf-base8.png")
-            .container
-                .con-ft-block.ft-color-FFF 定制电机<br>30年质量保障
-                .con-ft-sm.con-ft-sm8 30年质量保障，这就是我们受教于校，回报于校的方式。
-        .xf-con.xf-con9.hidden-xs#xf7(data-url="../images/produce/xf-base9.png")
-            .container
-                .con-ft-block 无管道设计&nbsp;&nbsp;&nbsp;&nbsp;安装便利
-                .con-ft-sm.con-ft-sm9 从复杂管道设计到无管道简易安装
-        .xf-con.xf-con10.hidden-xs#xf8(data-url="../images/produce/xf-base10.png")
-            .container
-                .con-ft-block.ft-color-FFF 匠心专制&nbsp;&nbsp;&nbsp;&nbsp;人性化设计
-                .con-ft-sm.con-ft-sm10 匠心，是融入在每一处细节的反复思量。
-                    .sm10-block.sm10-block1
-                        label 童锁设计
-                        img.data-img(data-url="../images/produce/xf-ts.png")
-                    .sm10-block.sm10-block2
-                        label 精致钣金稳固保障
-                        img.data-img(data-url="../images/produce/xf-jz.png")
-                    .sm10-block.sm10-block3
-                        label 安全防护网罩
-                        img.data-img(data-url="../images/produce/xf-aq.png")
-                    .sm10-block.sm10-block4
-                        img.data-img(data-url="../images/produce/xf-bj.png")
-                        label 边角圆弧处理
-                    .sm10-block.sm10-block5
-                        img.data-img(data-url="../images/produce/xf-zr.png")
-                        label 阻燃设计
-                    .sm10-block.sm10-block6
-                        img.data-img(data-url="../images/produce/xf-gq.png")
-                        label 钢琴烤漆环保选材
-                    .sm10-block.sm10-block7
-                        img.data-img(data-url="../images/produce/xf-qr.png")
-                        label 全热交换节能设置
-        img.data-img.xf-con-img.visible-xs-inline-block(data-url="../images/produce/produce-xf-1.png" style="min-height:245px;")
-        img.data-img.xf-con-img.visible-xs-inline-block(data-url="../images/produce/produce-xf-2.png" style="min-height:480px;")
-        img.data-img.xf-con-img.visible-xs-inline-block(data-url="../images/produce/produce-xf-3.png")
-        img.data-img.xf-con-img.visible-xs-inline-block(data-url="../images/produce/produce-xf-4.png")
-        img.data-img.xf-con-img.visible-xs-inline-block(data-url="../images/produce/produce-xf-5.png")
-        img.data-img.xf-con-img.visible-xs-inline-block(data-url="../images/produce/produce-xf-6.png")
-        img.data-img.xf-con-img.visible-xs-inline-block(data-url="../images/produce/produce-xf-7.png")
-        img.data-img.xf-con-img.visible-xs-inline-block(data-url="../images/produce/produce-xf-8.png")
-        img.data-img.xf-con-img.visible-xs-inline-block(data-url="../images/produce/produce-xf-9.png")
-        img.data-img.xf-con-img.visible-xs-inline-block(data-url="../images/produce/produce-xf-10.png")
-        img.data-img.xf-con-img.visible-xs-inline-block(data-url="../images/produce/produce-xf-11.png")
+                .con-ft-block
+                    img.data-img(data-url="./images/proXf/pro-xf-9.png")
+        img.data-img.xf-con-img.visible-xs-inline-block.xf-con-img1(data-url="./images/proXf/pro-mobile-1.jpg")
+        img.data-img.xf-con-img.visible-xs-inline-block.xf-con-img2(data-url="./images/proXf/pro-mobile-2.jpg")
+        img.data-img.xf-con-img.visible-xs-inline-block.xf-con-img3(data-url="./images/proXf/pro-mobile-3.jpg")
+        img.data-img.xf-con-img.visible-xs-inline-block.xf-con-img4(data-url="./images/proXf/pro-mobile-4.jpg")
+        img.data-img.xf-con-img.visible-xs-inline-block.xf-con-img5(data-url="./images/proXf/pro-mobile-5.jpg")
+        img.data-img.xf-con-img.visible-xs-inline-block.xf-con-img6(data-url="./images/proXf/pro-mobile-6.jpg")
+        img.data-img.xf-con-img.visible-xs-inline-block.xf-con-img7(data-url="./images/proXf/pro-mobile-7.jpg")
+        img.data-img.xf-con-img.visible-xs-inline-block.xf-con-img9(data-url="./images/proXf/pro-mobile-9.jpg")
+        img.data-img.xf-con-img.visible-xs-inline-block.xf-con-img10(data-url="./images/proXf/pro-mobile-10.jpg")
         include common/foot.jade
+        script(src="./js/plugin/jquery.1.3.min.js")
+        script(src="./js/plugin/global.jq.slidizle.js")
         script.
+            $('.dowebok').slidizle({
+                loop: true,
+                autoPlay: true,
+                timeout: 3000
+            });
+
             //头部下面导航页面的定位
             var heightArr = [];
-            for (var i = 1; i <= 8; i++) {
+            for (var i = 1; i <= 3; i++) {
                 var id = "#xf" + i;
                 var heightObj = {};
                 heightObj.id = i;
@@ -162,11 +110,14 @@ html(lang='en')
             }
             $(window).scroll(function () {
                 var topheight = $(window).scrollTop();
-                for (var j = heightArr.length-1; j > -1; j--) {
+                for (var j = heightArr.length - 1; j > -1; j--) {
                     if (topheight >= heightArr[j].top) {
                         $('.nav-class').removeClass('active');
-                        $(".nav-class"+ heightArr[j].id).addClass("active");
+                        $(".nav-class" + heightArr[j].id).addClass("active");
                         break;
                     }
                 }
             });
+
+
+

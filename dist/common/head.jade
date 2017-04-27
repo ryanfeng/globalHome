@@ -8,7 +8,7 @@ header.header
                     span.icon-bar
                     span.icon-bar
                 a.navbar-brand(href='/')
-                    img(src="./images/header_logo.png" alt="地球村")
+                    img(src="./images/common/header_logo.png" alt="地球村")
                 .weather-mobile
                     .mo-ricle-base
                     .mo-ricle
@@ -43,27 +43,28 @@ header.header
                             .w-f-origin 数据来源：中国环境监测总站
             #navbar.navbar-collapse.collapse(aria-expanded='false', style='height: 1px;')
                 ul.nav.navbar-nav.navbar-right(v-cloak)
-                    | <li v-for='l in list' v-if='$index < 2' v-bind:class="{'active': l.active}"> <a href='{{l.url}}'>{{l.name}}</a></li>
-                    li.dropdown.hd_dropdown
-                        a.dropdown-toggle
-                            | 产品
-                            span.showAll.glyphicon.glyphicon-plus
-                        ul.dropdown-menu(role='menu')
-                            .drop-block
-                                .row
-                                    a(href="produceXF.html")
-                                        .col-sm-4
-                                            img(src="../images/hd-xf.png" alt="地球村新风机")
-                                            .divider
-                                            | 新风机
-                                    a(href="produceJF.html")
-                                        .col-sm-4
-                                            img(src="../images/hd-jf.png" alt="地球村飓风")
-                                            .divider
-                                            | 飓风空气复原机
-                                    a(href="produceS1.html")
-                                        .col-sm-4
-                                            img(src="../images/hd-wk.png" alt='地球村s1')
-                                            .divider
-                                            | 空气复原机S1
-                    | <li v-for='l in list' v-if='2< $index' v-bind:class="{'active': l.active}"> <a href='{{l.url}}'>{{l.name}}</a></li>
+                    li(v-bind:class="{'active': l.active}" v-for='l in list')
+                        a(v-bind:href='l.url') {{l.name}}
+                    //li.dropdown.hd_dropdown
+                    //    a.dropdown-toggle
+                    //        | 产品
+                    //        span.showAll.glyphicon.glyphicon-plus
+                    //    ul.dropdown-menu(role='menu')
+                    //        .drop-block
+                    //            .row
+                    //                a(href="produceXF.html")
+                    //                    .col-sm-4
+                    //                        img(src="../images/hd-xf.png" alt="地球村新风机")
+                    //                        .divider
+                    //                        | 新风机
+                    //                a(href="produceJF.html")
+                    //                    .col-sm-4
+                    //                        img(src="../images/hd-jf.png" alt="地球村飓风")
+                    //                        .divider
+                    //                        | 飓风空气复原机
+                    //                a(href="produceS1.html")
+                    //                    .col-sm-4
+                    //                        img(src="../images/hd-wk.png" alt='地球村s1')
+                    //                        .divider
+                    //                        | 空气复原机S1
+                    //| <li v-for='l in list' v-if='2< $index' v-bind:class="{'active': l.active}"> <a href='{{l.url}}'>{{l.name}}</a></li>

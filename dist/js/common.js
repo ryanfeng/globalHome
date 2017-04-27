@@ -113,7 +113,7 @@ $('html').css("font-size", $(window).width()*20/375);
     $('.s1-con').scrollLoading();
     $('.school-con').scrollLoading();
     $('.bus-con').scrollLoading();
-    $('.home-img').scrollLoading();
+    $('.global-con').scrollLoading();
     //图片
     $('.data-img').scrollLoading();
 
@@ -223,85 +223,40 @@ $('html').css("font-size", $(window).width()*20/375);
     //头部导航数据
     var headerData = {
         home: {
-            name: '首页',
+            name: '关于地球村',
             url: '/',
             active: false
         },
-        schoolDevice: {
-            name: '校园新风',
-            url: 'schoolDevice.html',
-            active: false
-        },
-        produce: {
-            name: '产品',
-            url: 'produce.html',
+        produceServer: {
+            name: '产品即服务',
+            url: 'produceServer.html',
             active: false
         },
         business: {
-            name: '健康屋招商',
+            name: '加入地球村',
             url: 'business.html',
             active: false
         },
-        about: {
-            name: '关于地球村',
-            url: 'about.html',
+        appDown: {
+            name: 'APP下载',
+            url: 'appDown.html',
             active: false
         }
-
     };
-    //底部导航数据
-    var footerData = {
-        server: {
-            name: "服务支持",
-            child: [
-                {name: '售后服务', url: 'afterService.html'},
-                {name: 'App下载', url: 'appDown.html'},
-                {name: '常见问题', url: 'question.html'}],
-            src: 'afterService.html'
-        },
-        download: {
-            name: "资料下载",
-            child: [
-                {name: '产品手册', url: 'downFile.html?produce=1'},
-                {name: '检测报告', url: 'downFile.html?report=1'}],
-            src: 'downFile.html'
-        },
-        contact: {
-            name: "联系我们",
-            child: [{name: '商务合作', url: 'business.html?cantrat=1'}],
-            src: 'business.html?cantrat=1'
-        },
-        aboutLink: {
-            name: "相关栏目",
-            child: [
-                {name: '校园新风', url: '/schoolDevice.html'},
-                {name: '健康屋', url: '/business.html'},
-                {name: '家用新风机', url: '/produceXF.html'}
-            ],
-            src: 'business.html?cantrat=1'
-        }
-    };
-    if ($(window).width() < 768) {
-        footerData.contact.src = 'join.html';
-        footerData.contact.child[0].url = 'join.html';
-    }
     //页面导航页面的定位
     var pathname = window.location.pathname;
-    if ((pathname.indexOf('produceXF') != -1) || (pathname.indexOf('produceJF') != -1) || (pathname.indexOf('produceS1') != -1)) {
-        headerData.produce.active = true;
-        $(".hd_dropdown").addClass('active');
-    }
+    // if ((pathname.indexOf('produceXF') != -1) || (pathname.indexOf('produceJF') != -1) || (pathname.indexOf('produceS1') != -1)) {
+    //     headerData.produce.active = true;
+    //     $(".hd_dropdown").addClass('active');
+    // }
 
+    console.log(pathname);
     $.each(headerData, function (obj) {
+        if(pathname == "/") {
+            headerData['home'].active = true;
+        }
         if (pathname.indexOf(obj) != -1) {
             headerData[obj].active = true;
-        }
-    });
-
-    new Vue({
-        el: '.footer',
-        data: {
-            list: footerData
         }
     });
 

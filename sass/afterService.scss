@@ -1,113 +1,186 @@
-.down-nav {
-  height: 56px;
-  width: 100%;
-  background: #ececed;
-  ul {
-    overflow: hidden;
-    li {      margin-top: 15px;
-      font-size: 18px;
-      color: #000;
-      margin-right: 20px;
-      .active {
-        color: #00afd8;
-      }
-    }
-  }
-}
-
 .banner {
-  height: 480px;
+  height: 560px;
   text-align: center;
   width: 100%;
-  background-image: url("http://qnstatic.globalvillage.biz/server/service-base.png");
+  background-image: url("../images/afterService/afterService-bg.jpg");
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
   .title1 {
-    font-size: 50px;
+    font-size: 40px;
     color: #ffffff;
-    padding-top: 100px;
   }
   .title2 {
     font-size: 40px;
+    padding-top: 140px;
     color: #ffffff;
+  }
+  .after-btn {
+    margin-top: 60px;
+  }
+  label {
+    display: inline-block;
+    border: 1px solid #ffffff;
+    border-radius: 46px;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 20px;
+    color: #FFFFFF;
+  }
+  label:nth-of-type(1) {
+    margin-right: 108px;
+  }
+  .active {
+    background: #ffffff;
+    color: #4a4a4a;
   }
 }
 
 .main {
   padding: 40px 0;
-  background: #fafafa;
+  background: rgb(244, 244, 244);
   width: 100%;
   text-align: center;
-  .block {
-    margin: 10px 0;
-    display: inline-block;
-    background: #FFFFFF;
-    text-align: center;
-    border-radius: 6px;
-    width: 370px;
-    height: 520px;
-    padding: 20px 30px;
-    float: left;
-    img {
-      margin: 10px 0 15px;
-      width: 70px;
-    }
-    .title {
-      font-size: 20px;
-      color: #4a4a4a;
-      margin: 0 0 5px 0;
-    }
-    .con {
+  .main-wrapper {
+    margin: 50px 0;
+    padding: 70px 80px;
+    background-color: #FFF;
+    .wrapper-top {
       text-align: left;
-      font-size: 13px;
-      color: #9b9b9b;
-      letter-spacing: 1px;
-      line-height: 26px;
+      .top-blcok {
+        display: inline-block;
+        width: 480px;
+        margin-bottom: 110px;
+        img {
+          width: 90px;
+          height: 90px;
+          vertical-align: top;
+          margin-right: 30px;
+        }
+        h4 {
+          margin: 0;
+          width: 320px;
+          vertical-align: top;
+          display: inline-block;
+          text-align: left;
+          label {
+            font-size: 20px;
+            color: #73c92d;
+            margin-bottom: 7px;
+          }
+          span {
+            font-size: 14px;
+            color: #4a4a4a;
+            line-height: 24px;
+          }
+        }
+      }
+      .top-blcok:last-child {
+        margin-bottom: 50px;
+      }
+      .top-blcok-right {
+        margin-left: 20px;
+      }
+      border-bottom: 1px solid #cecece;
     }
-  }
-  .middle {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  span {
-    color: #00afd8;
+    .wrapper-prompt {
+      text-align: left;
+      h2 {
+        text-align: left;
+        font-size: 20px;
+        color: #75c930;
+        margin-top: 50px;
+        margin-bottom: 18px;
+      }
+      p {
+        text-align: left;
+        font-size: 14px;
+        color: #4a4a4a;
+        line-height: 26px;
+      }
+    }
   }
 }
 
 @media (max-width: 767px) {
-  .down-nav {
-    height: 50px;
-    ul {
-      li {
-        font-size: 16px;
-        margin-right: 10px;
-      }
-    }
-  }
-
   .banner {
-    height: 340px;
+    height: 200px;
     .title1 {
-      font-size: 30px;
+      font-size: 20px;
     }
     .title2 {
-      font-size: 20px;
+      font-size: 24px;
+      padding-top: 40px;
+    }
+    .after-btn {
+      margin-top: 20px;
+    }
+    label {
+      border-radius: 46px;
+      width: 140px;
+      height: 32px;
+      line-height: 32px;
+      font-size: 16px;
+    }
+    label:nth-of-type(1) {
+      margin-right: 10px;
     }
   }
 
   .main {
-    padding: 20px 0;
-    .block {
-      max-width: 400px;
-      min-height: 520px;;
-      width: 100%;
-      padding: 10px 15px;
-      float: none;
-      height: auto;
-      overflow: hidden;
-      display: block;
-      margin: 10px auto;
+    padding: 0;
+    .main-wrapper {
+      margin: 30px 0;
+      padding: 30px 10px;
+      background-color: #FFF;
+      .wrapper-top {
+        text-align: center;
+        .top-blcok {
+          width: 100%;
+          margin-bottom: 40px;
+          img {
+            width: 90px;
+            height: 90px;
+            margin-right: 0;
+            margin-bottom: 20px;
+          }
+          h4 {
+            margin: 0;
+            width: 100%;
+            text-align: center;
+            label {
+              text-align: center;
+              font-size: 20px;
+              margin-bottom: 7px;
+            }
+            span {
+              font-size: 14px;
+              line-height: 24px;
+            }
+          }
+        }
+        .top-blcok:last-child {
+          margin-bottom: 30px;
+        }
+        .top-blcok-right {
+          margin-left: 0px;
+        }
+        border-bottom: 1px solid #cecece;
+      }
+      .wrapper-prompt {
+        h2 {
+          font-size: 20px;
+          margin-top: 30px;
+          margin-bottom: 12px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 26px;
+        }
+      }
     }
   }
 }
