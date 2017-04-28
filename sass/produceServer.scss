@@ -77,15 +77,20 @@
 }
 
 .school-con3 {
-  background-color: #72c72c;
-  height: 360px;
+  background-color: #fff;
+  height: 300px;
+  h2{
+    margin: 0;
+    font-size: 48px;
+    color: #74c92e;
+    line-height: 70px;
+  }
+
   .con-ft-block {
-    padding-top: 120px;
-    img {
-      height: 97px;
-    }
+    padding-top: 80px;
   }
 }
+
 
 .school-con4 {
   height: 850px;
@@ -549,6 +554,21 @@
     img {
       height: 283px;
     }
+  }
+}
+
+.school-con15 {
+  background-color: #74c92e;
+  height: 300px;
+  h2{
+    margin: 0;
+    font-size: 48px;
+    color: #fff;
+    line-height: 70px;
+  }
+
+  .con-ft-block {
+    padding-top: 80px;
   }
 }
 
