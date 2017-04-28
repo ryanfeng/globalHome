@@ -83,11 +83,14 @@
     margin: 0;
     font-size: 48px;
     color: #74c92e;
-    line-height: 70px;
+    line-height: 60px;
+    span{
+      font-size: 32px;
+    }
   }
 
   .con-ft-block {
-    padding-top: 80px;
+    padding-top: 95px;
   }
 }
 
@@ -558,17 +561,20 @@
 }
 
 .school-con15 {
-  background-color: #74c92e;
+  background: #72c72c;
   height: 300px;
   h2{
     margin: 0;
     font-size: 48px;
     color: #fff;
-    line-height: 70px;
+    line-height: 60px;
+    span{
+      font-size: 32px;
+    }
   }
 
   .con-ft-block {
-    padding-top: 80px;
+    padding-top: 95px;
   }
 }
 
@@ -626,11 +632,39 @@
   }
 
   .school-con3 {
-    height: 40vw;
+    height: 30vw;
     position: relative;
     z-index: 3;
+    h2{
+      font-size: 26px;
+      line-height: 7vw;
+      span{
+        font-size: 20px;
+      }
+    }
     .con-ft-block {
-      padding-top: 11vw;
+      padding-top: 9vw;
+      img {
+        height: auto;
+        width: 80vw;
+      }
+    }
+  }
+  .school-con15 {
+    height: 30vw;
+    position: relative;
+    background: #72c72c;
+    z-index: 3;
+    h2{
+      font-size: 26px;
+      color: #fff;
+      line-height: 7vw;
+      span{
+        font-size: 20px;
+      }
+    }
+    .con-ft-block {
+      padding-top: 9vw;
       img {
         height: auto;
         width: 80vw;
