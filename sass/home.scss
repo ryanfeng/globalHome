@@ -56,8 +56,8 @@
 
 .global-con2 {
   height: auto;
-  //background: rgb(231, 233, 240);
-  background-color: #fff;
+  text-align: center;
+  background-color: #FFF;
   .con-ft-block {
     padding-top: 60px;
     height: 300px;
@@ -88,7 +88,11 @@
     height: 360px;
   }
   .con-ft-block-plane {
+    width: 400px;
     cursor: pointer;
+    display: inline-block;
+    margin-bottom: 150px;
+    margin-top: 30px;
   }
   .con-ft-block-active {
     background: #73c92d;
