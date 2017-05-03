@@ -97,7 +97,7 @@
     };
 })(jQuery);
 
-$('html').css("font-size", $(window).width()*20/375);
+$('html').css("font-size", $(window).width() * 20 / 375);
 /**
  * Created by apple on 16/9/22.
  */
@@ -150,7 +150,6 @@ $('html').css("font-size", $(window).width()*20/375);
 
     //PC端头部展开滑动效果
     if ($(window).width() >= 768) {
-        //头部导航
         $('.hd_dropdown').mouseenter(function () {
             $(this).addClass('nav-item-active');
             $(".dropdown-menu").css('animation', 'opacity-a linear .3s').css('height', '214px');
@@ -161,14 +160,42 @@ $('html').css("font-size", $(window).width()*20/375);
         });
     }
 
-    //产品模块导航的页面滚动显现
-    $(window).scroll(function () {
-        if ($(document).scrollTop() > 155) {
-            $(".produce-nav-fix").css('margin-top', '0px');
+    //头部滚动导航
+    // var pathname = window.location.pathname;
+    if ($(window).width() >= 768) {
+        if ($(document).scrollTop() > 50) {
+            $(".header").addClass("header-fix");
         } else {
-            $(".produce-nav-fix").css('margin-top', '-52px');
+            $(".header").removeClass("header-fix");
         }
-    });
+        $(window).scroll(function () {
+            // if ((pathname.indexOf('produceXF') == -1) && (pathname.indexOf('produceJF') == -1) && (pathname.indexOf('produceS1') == -1)) {}
+            if ($(document).scrollTop() > 50) {
+                $(".header").addClass("header-fix");
+            } else {
+                $(".header").removeClass("header-fix");
+            }
+            if ($(document).scrollTop() > 90) {
+                $(".produce-nav-fix").css('margin-top', '0px').css('opacity', '.89');
+            } else {
+                $(".produce-nav-fix").css('margin-top', '-52px').css('opacity', '0');
+            }
+        });
+    } else {
+        if ($(document).scrollTop() > 60) {
+            $(".header").addClass("header-fix");
+        } else {
+            $(".header").removeClass("header-fix");
+        }
+        $(window).scroll(function () {
+            "use strict";
+            if ($(document).scrollTop() > 60) {
+                $(".header").addClass("header-fix");
+            } else {
+                $(".header").removeClass("header-fix");
+            }
+        })
+    }
 
     //底部微信/微博/QQ等的滑动效果
     $(".about-logo").mouseenter(function () {
@@ -250,9 +277,8 @@ $('html').css("font-size", $(window).width()*20/375);
     //     $(".hd_dropdown").addClass('active');
     // }
 
-    console.log(pathname);
     $.each(headerData, function (obj) {
-        if(pathname == "/") {
+        if (pathname == "/") {
             headerData['home'].active = true;
         }
         if (pathname.indexOf(obj) != -1) {

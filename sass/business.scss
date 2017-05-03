@@ -95,7 +95,7 @@
   .con-ft-sm {
     text-align: center;
     .con4-block {
-      width: 242px;
+      width: 262px;
       display: inline-block;
       margin: 0 100px;
       img {
@@ -212,7 +212,8 @@
     position: relative;
     text-align: center;
     padding-right: 220px;
-    padding-top: 72px;
+    padding-top: 92px;
+    z-index: 100;
     .con-arraw-left {
       height: 62px;
       cursor: pointer;
