@@ -748,7 +748,8 @@ body {
 
   @media (max-width: 767px) {
     .f-tp {
-      height: 86vw;
+      height: auto;
+      padding-bottom: 6vw;
       width: 100%;
       text-align: center;
       background-size: cover;
